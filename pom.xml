@@ -69,7 +69,8 @@
         <istack-commons-runtime.version>3.0.11</istack-commons-runtime.version>
         <txw2.version>2.3.3</txw2.version>
 
-        <!-- AdeptJ Modules Dependencies Start -->
+        <!-- AdeptJ Runtime and Modules Dependencies Start -->
+        <adeptj-runtime.version>1.0.14-SNAPSHOT</adeptj-runtime.version>
         <adeptj-modules-webconsole-plugins.version>1.0.0</adeptj-modules-webconsole-plugins.version>
         <!-- AdeptJ Modules Dependencies End -->
 
@@ -1070,7 +1071,7 @@
         <dependency>
             <groupId>com.adeptj</groupId>
             <artifactId>adeptj-runtime</artifactId>
-            <version>1.0.14-SNAPSHOT</version>
+            <version>${adeptj-runtime.version}</version>
             <scope>compile</scope>
         </dependency>
 
