@@ -907,6 +907,7 @@
             <artifactId>org.apache.felix.http.bridge</artifactId>
             <version>${felix.http.bridge.version}</version>
             <scope>provided</scope>
+            <classifier>light</classifier>
         </dependency>
 
         <dependency>
