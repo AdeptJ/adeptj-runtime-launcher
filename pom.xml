@@ -38,7 +38,6 @@
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <main.class>com.adeptj.runtime.core.Launcher</main.class>
-        <skipTests>true</skipTests>
         <!-- Common Dependencies -->
         <undertow.version>2.2.4.Final</undertow.version>
         <xnio.version>3.8.4.Final</xnio.version>
