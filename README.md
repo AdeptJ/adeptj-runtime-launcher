@@ -18,7 +18,7 @@
 
 </p>
 
-#Launcher for AdeptJ Runtime
+**Launcher for AdeptJ Runtime**
 
 **Minimal runnable jar is ~30MB in size with below mentioned modules, starts in ~3000ms and low on resources**
 
