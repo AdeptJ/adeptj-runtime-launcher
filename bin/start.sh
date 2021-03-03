@@ -79,10 +79,9 @@ ADEPTJ_RUNTIME_OPTS="${JVM_OPTS} ${RESTEASY_OPTS}
  -Dmax.concurrent.requests=5000 \
  -Denable.req.buffering=true \
  -Dreq.buff.maxBuffers=200 \
- -Duse.provided.keyStore=false \
- -Dadeptj.rt.keyStore=path-to-local-java-keystore \
- -Dadeptj.rt.keyStorePassword=java-keystore-password \
- -Dadeptj.rt.keyPassword=key-password \
+ -Dadeptj.rt.p12-file-external=true \
+ -Dadeptj.rt.p12-file-location=/Users/rakesh.kumar/server.p12 \
+ -Dadeptj.rt.p12-password=changeit \
  -Denable.eclipselink.exceptionhandler.logging=false \
  -Dorg.jboss.logging.provider=slf4j"
 
