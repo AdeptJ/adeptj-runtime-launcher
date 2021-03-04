@@ -83,7 +83,10 @@ ADEPTJ_RUNTIME_OPTS="${JVM_OPTS} ${RESTEASY_OPTS}
  -Dadeptj.rt.p12-file-location=/Users/rakesh.kumar/server.p12 \
  -Dadeptj.rt.p12-password=changeit \
  -Denable.eclipselink.exceptionhandler.logging=false \
- -Dorg.jboss.logging.provider=slf4j"
+ -Dorg.jboss.logging.provider=slf4j \
+ -Doverwrite.server.conf.file=true \
+ -Doverwrite.framework.conf.file=true \
+ -Dadeptj.rt.log.framework.error=true"
 
 cd target || exit
 
