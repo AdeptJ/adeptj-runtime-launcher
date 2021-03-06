@@ -63,7 +63,6 @@ fi
 ADEPTJ_RUNTIME_OPTS="${JVM_OPTS} ${RESTEASY_OPTS}
  -Dadeptj.rt.port=8080 \
  -Dadeptj.rt.https.port=8443 \
- -Dadeptj.rt.port.check=false \
  -Dadeptj.rt.mode=DEV \
  -Denable.http2=true \
  -Dtls.version=TLSv1.3 \
@@ -72,7 +71,7 @@ ADEPTJ_RUNTIME_OPTS="${JVM_OPTS} ${RESTEASY_OPTS}
  -Dlog.async=true \
  -Dlog.immediate.flush=true \
  -Dfelix.log.level=1 \
- -Dbenchmark.bundle.start=true \
+ -Dbenchmark.bundle.start=false \
  -Dprovision.bundles.explicitly=false \
  -Dshutdown.wait.time=30000 \
  -Dadeptj.session.timeout=3600 \
@@ -84,8 +83,8 @@ ADEPTJ_RUNTIME_OPTS="${JVM_OPTS} ${RESTEASY_OPTS}
  -Dadeptj.rt.p12-password=changeit \
  -Denable.eclipselink.exceptionhandler.logging=false \
  -Dorg.jboss.logging.provider=slf4j \
- -Doverwrite.server.conf.file=true \
- -Doverwrite.framework.conf.file=true \
+ -Doverwrite.server.conf.file=false \
+ -Doverwrite.framework.conf.file=false \
  -Dadeptj.rt.log.framework.error=true"
 
 cd target || exit
