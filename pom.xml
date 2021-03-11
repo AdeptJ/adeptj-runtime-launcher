@@ -62,6 +62,7 @@
         <jakarta.mail.version>1.6.5</jakarta.mail.version>
         <jakarta.el.version>3.0.3</jakarta.el.version>
         <mime4j.version>0.8.3</mime4j.version>
+        <jcommander.version>1.81</jcommander.version>
 
         <!-- JAX-B Dependencies JDK 10+ -->
         <jakarta.xml.bind-api.version>2.3.3</jakarta.xml.bind-api.version>
@@ -619,6 +620,13 @@
         <!-- Apache Commons Dependencies End -->
 
         <!-- Misc Dependencies Start -->
+
+        <dependency>
+            <groupId>com.beust</groupId>
+            <artifactId>jcommander</artifactId>
+            <version>${jcommander.version}</version>
+            <scope>compile</scope>
+        </dependency>
 
         <dependency>
             <groupId>io.jsonwebtoken</groupId>
