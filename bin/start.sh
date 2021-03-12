@@ -66,6 +66,7 @@ ADEPTJ_RUNTIME_OPTS="${JVM_OPTS} ${RESTEASY_OPTS}
  -Dadeptj.rt.mode=PROD \
  -Denable.http2=true \
  -Dtls.version=TLSv1.3 \
+ -Dscan.startup.aware.classes=true \
  -Dwebsocket.logs.tailing.delay=5000 \
  -Dwait.time.for.debug.attach=5 \
  -Dlog.async=true \
