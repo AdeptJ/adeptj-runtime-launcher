@@ -72,30 +72,12 @@
 
         <!-- AdeptJ Runtime and Modules Dependencies Start -->
         <adeptj-runtime.version>1.0.14-SNAPSHOT</adeptj-runtime.version>
+        <adeptj-modules-commons-logging.version>1.0.3</adeptj-modules-commons-logging.version>
+        <adeptj-modules-jaxrs-resteasy.version>2.0.0</adeptj-modules-jaxrs-resteasy.version>
+        <adeptj-modules-webconsole-branding.version>1.0.0</adeptj-modules-webconsole-branding.version>
+        <adeptj-modules-webconsole-security.version>1.0.4</adeptj-modules-webconsole-security.version>
         <adeptj-modules-webconsole-plugins.version>1.0.0</adeptj-modules-webconsole-plugins.version>
         <!-- AdeptJ Modules Dependencies End -->
-
-        <!-- Apache Felix and OSGi Dependencies Version -->
-        <felix.framework.version>7.0.0</felix.framework.version>
-        <felix.webconsole.plugins.packageadmin.version>1.0.4</felix.webconsole.plugins.packageadmin.version>
-        <felix.webconsole.plugins.event.version>1.1.8</felix.webconsole.plugins.event.version>
-        <felix.webconsole.plugins.ds.version>2.1.0</felix.webconsole.plugins.ds.version>
-        <felix.webconsole.plugins.memoryusage.version>1.0.10</felix.webconsole.plugins.memoryusage.version>
-        <felix.inventory.version>1.0.6</felix.inventory.version>
-        <felix.http.bridge.version>4.1.2</felix.http.bridge.version>
-        <felix.http.base.version>4.1.2</felix.http.base.version>
-        <felix.log.version>1.2.4</felix.log.version>
-        <felix.metatype.version>1.2.4</felix.metatype.version>
-        <felix.threaddump.version>1.0.0</felix.threaddump.version>
-        <felix.fileinstall.version>3.6.8</felix.fileinstall.version>
-        <felix.http.sslfilter.version>1.2.6</felix.http.sslfilter.version>
-        <felix.jaas.version>1.0.2</felix.jaas.version>
-        <felix.rootcause.version>0.1.0</felix.rootcause.version>
-        <felix.systemready.version>0.4.2</felix.systemready.version>
-        <felix.healthcheck.core.version>2.0.8</felix.healthcheck.core.version>
-        <felix.healthcheck.generalchecks.version>2.0.6</felix.healthcheck.generalchecks.version>
-        <felix.healthcheck.webconsoleplugin.version>2.0.2</felix.healthcheck.webconsoleplugin.version>
-        <felix.configadmin.plugin.interpolation.version>1.1.2</felix.configadmin.plugin.interpolation.version>
     </properties>
 
     <!-- Project Information -->
@@ -796,13 +778,6 @@
         </dependency>
 
         <dependency>
-            <groupId>org.apache.felix</groupId>
-            <artifactId>org.apache.felix.framework</artifactId>
-            <version>${felix.framework.version}</version>
-            <scope>compile</scope>
-        </dependency>
-
-        <dependency>
             <groupId>org.osgi</groupId>
             <artifactId>org.osgi.util.function</artifactId>
             <scope>provided</scope>
@@ -822,8 +797,12 @@
 
         <dependency>
             <groupId>org.apache.felix</groupId>
+            <artifactId>org.apache.felix.framework</artifactId>
+        </dependency>
+
+        <dependency>
+            <groupId>org.apache.felix</groupId>
             <artifactId>org.apache.felix.systemready</artifactId>
-            <version>${felix.systemready.version}</version>
             <scope>provided</scope>
             <exclusions>
                 <exclusion>
@@ -860,35 +839,30 @@
         <dependency>
             <groupId>org.apache.felix</groupId>
             <artifactId>org.apache.felix.scr</artifactId>
-            <version>${felix.scr.version}</version>
             <scope>provided</scope>
         </dependency>
 
         <dependency>
             <groupId>org.apache.felix</groupId>
             <artifactId>org.apache.felix.configadmin</artifactId>
-            <version>${felix.configadmin.version}</version>
             <scope>provided</scope>
         </dependency>
 
         <dependency>
             <groupId>org.apache.felix</groupId>
             <artifactId>org.apache.felix.eventadmin</artifactId>
-            <version>${felix.eventadmin.version}</version>
             <scope>provided</scope>
         </dependency>
 
         <dependency>
             <groupId>org.apache.felix</groupId>
             <artifactId>org.apache.felix.metatype</artifactId>
-            <version>${felix.metatype.version}</version>
             <scope>provided</scope>
         </dependency>
 
         <dependency>
             <groupId>org.apache.felix</groupId>
             <artifactId>org.apache.felix.log</artifactId>
-            <version>${felix.log.version}</version>
             <scope>provided</scope>
             <exclusions>
                 <exclusion>
@@ -906,28 +880,22 @@
         <dependency>
             <groupId>org.apache.felix</groupId>
             <artifactId>org.apache.felix.http.base</artifactId>
-            <version>${felix.http.base.version}</version>
-            <scope>provided</scope>
         </dependency>
 
         <dependency>
             <groupId>org.apache.felix</groupId>
             <artifactId>org.apache.felix.http.bridge</artifactId>
-            <version>${felix.http.bridge.version}</version>
-            <scope>provided</scope>
             <classifier>light</classifier>
         </dependency>
 
         <dependency>
             <groupId>org.apache.felix</groupId>
             <artifactId>org.apache.felix.webconsole</artifactId>
-            <scope>provided</scope>
         </dependency>
 
         <dependency>
             <groupId>org.apache.felix</groupId>
             <artifactId>org.apache.felix.inventory</artifactId>
-            <version>${felix.inventory.version}</version>
             <scope>provided</scope>
             <exclusions>
                 <exclusion>
@@ -940,7 +908,6 @@
         <dependency>
             <groupId>org.apache.felix</groupId>
             <artifactId>org.apache.felix.webconsole.plugins.memoryusage</artifactId>
-            <version>${felix.webconsole.plugins.memoryusage.version}</version>
             <scope>provided</scope>
             <exclusions>
                 <exclusion>
@@ -957,7 +924,6 @@
         <dependency>
             <groupId>org.apache.felix</groupId>
             <artifactId>org.apache.felix.threaddump</artifactId>
-            <version>${felix.threaddump.version}</version>
             <scope>provided</scope>
             <exclusions>
                 <exclusion>
@@ -974,7 +940,6 @@
         <dependency>
             <groupId>org.apache.felix</groupId>
             <artifactId>org.apache.felix.webconsole.plugins.event</artifactId>
-            <version>${felix.webconsole.plugins.event.version}</version>
             <scope>provided</scope>
             <exclusions>
                 <exclusion>
@@ -991,14 +956,12 @@
         <dependency>
             <groupId>org.apache.felix</groupId>
             <artifactId>org.apache.felix.webconsole.plugins.ds</artifactId>
-            <version>${felix.webconsole.plugins.ds.version}</version>
             <scope>provided</scope>
         </dependency>
 
         <dependency>
             <groupId>org.apache.felix</groupId>
             <artifactId>org.apache.felix.webconsole.plugins.packageadmin</artifactId>
-            <version>${felix.webconsole.plugins.packageadmin.version}</version>
             <scope>provided</scope>
             <exclusions>
                 <exclusion>
@@ -1015,21 +978,18 @@
         <dependency>
             <groupId>org.apache.felix</groupId>
             <artifactId>org.apache.felix.fileinstall</artifactId>
-            <version>${felix.fileinstall.version}</version>
             <scope>provided</scope>
         </dependency>
 
         <dependency>
             <groupId>org.apache.felix</groupId>
             <artifactId>org.apache.felix.http.sslfilter</artifactId>
-            <version>${felix.http.sslfilter.version}</version>
             <scope>provided</scope>
         </dependency>
 
         <dependency>
             <groupId>org.apache.felix</groupId>
             <artifactId>org.apache.felix.rootcause</artifactId>
-            <version>${felix.rootcause.version}</version>
             <scope>provided</scope>
         </dependency>
 
@@ -1048,28 +1008,24 @@
         <dependency>
             <groupId>org.apache.felix</groupId>
             <artifactId>org.apache.felix.healthcheck.core</artifactId>
-            <version>${felix.healthcheck.core.version}</version>
             <scope>provided</scope>
         </dependency>
 
         <dependency>
             <groupId>org.apache.felix</groupId>
             <artifactId>org.apache.felix.healthcheck.generalchecks</artifactId>
-            <version>${felix.healthcheck.generalchecks.version}</version>
             <scope>provided</scope>
         </dependency>
 
         <dependency>
             <groupId>org.apache.felix</groupId>
             <artifactId>org.apache.felix.healthcheck.webconsoleplugin</artifactId>
-            <version>${felix.healthcheck.webconsoleplugin.version}</version>
             <scope>provided</scope>
         </dependency>
 
         <dependency>
             <groupId>org.apache.felix</groupId>
             <artifactId>org.apache.felix.configadmin.plugin.interpolation</artifactId>
-            <version>${felix.configadmin.plugin.interpolation.version}</version>
             <scope>provided</scope>
         </dependency>
 
@@ -1108,7 +1064,6 @@
         <dependency>
             <groupId>com.adeptj</groupId>
             <artifactId>adeptj-modules-commons-utils</artifactId>
-            <version>${adeptj-modules-commons-utils.version}</version>
             <scope>provided</scope>
         </dependency>
 
@@ -1122,42 +1077,36 @@
         <dependency>
             <groupId>com.adeptj</groupId>
             <artifactId>adeptj-modules-commons-crypto</artifactId>
-            <version>${adeptj-modules-commons-crypto.version}</version>
             <scope>provided</scope>
         </dependency>
 
         <dependency>
             <groupId>com.adeptj</groupId>
             <artifactId>adeptj-modules-commons-cache</artifactId>
-            <version>${adeptj-modules-commons-cache.version}</version>
             <scope>provided</scope>
         </dependency>
 
         <dependency>
             <groupId>com.adeptj</groupId>
             <artifactId>adeptj-modules-websecurity-jwt</artifactId>
-            <version>${adeptj-modules-websecurity-jwt.version}</version>
             <scope>provided</scope>
         </dependency>
 
         <dependency>
             <groupId>com.adeptj</groupId>
             <artifactId>adeptj-modules-commons-validator</artifactId>
-            <version>${adeptj-modules-commons-validator.version}</version>
             <scope>provided</scope>
         </dependency>
 
         <dependency>
             <groupId>com.adeptj</groupId>
             <artifactId>adeptj-modules-jaxrs-api</artifactId>
-            <version>${adeptj-modules-jaxrs-api.version}</version>
             <scope>provided</scope>
         </dependency>
 
         <dependency>
             <groupId>com.adeptj</groupId>
             <artifactId>adeptj-modules-jaxrs-core</artifactId>
-            <version>${adeptj-modules-jaxrs-core.version}</version>
             <scope>provided</scope>
         </dependency>
 
@@ -1290,7 +1239,6 @@
                 <dependency>
                     <groupId>com.adeptj</groupId>
                     <artifactId>adeptj-modules-commons-jdbc</artifactId>
-                    <version>${adeptj-modules-commons-jdbc.version}</version>
                     <scope>provided</scope>
                 </dependency>
 
@@ -1313,7 +1261,6 @@
                 <dependency>
                     <groupId>com.adeptj</groupId>
                     <artifactId>adeptj-modules-data-mybatis</artifactId>
-                    <version>${adeptj-modules-data-mybatis.version}</version>
                     <scope>provided</scope>
                 </dependency>
 
@@ -1374,7 +1321,6 @@
                 <dependency>
                     <groupId>com.adeptj</groupId>
                     <artifactId>adeptj-modules-data-jpa</artifactId>
-                    <version>${adeptj-modules-data-jpa.version}</version>
                     <scope>provided</scope>
                 </dependency>
 
@@ -1486,7 +1432,6 @@
                 <dependency>
                     <groupId>com.adeptj</groupId>
                     <artifactId>adeptj-modules-data-mongodb</artifactId>
-                    <version>${adeptj-modules-data-mongodb.version}</version>
                     <scope>provided</scope>
                 </dependency>
 
