@@ -70,14 +70,9 @@
         <istack-commons-runtime.version>3.0.11</istack-commons-runtime.version>
         <txw2.version>2.3.3</txw2.version>
 
-        <!-- AdeptJ Runtime and Modules Dependencies Start -->
+        <!-- AdeptJ Runtime Dependencies Start -->
         <adeptj-runtime.version>1.0.14-SNAPSHOT</adeptj-runtime.version>
-        <adeptj-modules-commons-logging.version>1.0.3</adeptj-modules-commons-logging.version>
-        <adeptj-modules-jaxrs-resteasy.version>2.0.0</adeptj-modules-jaxrs-resteasy.version>
-        <adeptj-modules-webconsole-branding.version>1.0.0</adeptj-modules-webconsole-branding.version>
-        <adeptj-modules-webconsole-security.version>1.0.4</adeptj-modules-webconsole-security.version>
-        <adeptj-modules-webconsole-plugins.version>1.0.0</adeptj-modules-webconsole-plugins.version>
-        <!-- AdeptJ Modules Dependencies End -->
+        <!-- AdeptJ Runtime Dependencies End -->
     </properties>
 
     <!-- Project Information -->
@@ -1043,21 +1038,18 @@
         <dependency>
             <groupId>com.adeptj</groupId>
             <artifactId>adeptj-modules-webconsole-branding</artifactId>
-            <version>${adeptj-modules-webconsole-branding.version}</version>
             <scope>provided</scope>
         </dependency>
 
         <dependency>
             <groupId>com.adeptj</groupId>
             <artifactId>adeptj-modules-webconsole-security</artifactId>
-            <version>${adeptj-modules-webconsole-security.version}</version>
             <scope>provided</scope>
         </dependency>
 
         <dependency>
             <groupId>com.adeptj</groupId>
             <artifactId>adeptj-modules-webconsole-plugins</artifactId>
-            <version>${adeptj-modules-webconsole-plugins.version}</version>
             <scope>provided</scope>
         </dependency>
 
@@ -1070,7 +1062,6 @@
         <dependency>
             <groupId>com.adeptj</groupId>
             <artifactId>adeptj-modules-commons-logging</artifactId>
-            <version>${adeptj-modules-commons-logging.version}</version>
             <scope>provided</scope>
         </dependency>
 
@@ -1113,7 +1104,6 @@
         <dependency>
             <groupId>com.adeptj</groupId>
             <artifactId>adeptj-modules-jaxrs-resteasy</artifactId>
-            <version>${adeptj-modules-jaxrs-resteasy.version}</version>
             <scope>provided</scope>
         </dependency>
 
