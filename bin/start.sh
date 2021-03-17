@@ -63,7 +63,7 @@ fi
 ADEPTJ_RUNTIME_OPTS="${JVM_OPTS} ${RESTEASY_OPTS}
  -Dadeptj.rt.port=8080 \
  -Dadeptj.rt.https.port=8443 \
- -Dadeptj.rt.mode=PROD \
+ -Dadeptj.rt.mode=DEV \
  -Denable.http2=true \
  -Dtls.version=TLSv1.3 \
  -Dscan.startup.aware.classes=true \
