@@ -91,4 +91,22 @@ ADEPTJ_RUNTIME_OPTS="${JVM_OPTS} ${RESTEASY_OPTS}
 
 cd target || exit
 
-java ${ADEPTJ_RUNTIME_OPTS} -jar adeptj-runtime-launcher.jar
+java ${ADEPTJ_RUNTIME_OPTS} -jar adeptj-runtime-launcher.jar \
+-port 8080 \
+-shutdownWaitTime 30000 \
+-sessionTimeout 3600 \
+-maxConcurrentRequests 5000 \
+-requestBufferingMaxBuffer 200 \
+-felixLogLevel 1 \
+-dev \
+-scanStartupAwareClasses \
+-logAsync \
+-logImmediateFlush \
+-forceProvisionBundles \
+-requestBuffering \
+-overwriteServerConf \
+-overwriteFrameworkConf \
+-logFrameworkError \
+-tls TLSv1.3 \
+-p12File /Users/rakesh.kumar/server.p12 \
+-p12Password changeit
