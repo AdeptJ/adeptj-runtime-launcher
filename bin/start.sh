@@ -50,7 +50,10 @@ if [ "$1" = "jpda" ] ; then
   if [ -z "$JPDA_ADDRESS" ]; then
     JPDA_ADDRESS="localhost:8000"
   fi
-  if [ -z "$JPDA_SUSPEND" ]; then
+  if [ "$2" = "suspend" ] ;
+  then
+    JPDA_SUSPEND="y"
+  else
     JPDA_SUSPEND="n"
   fi
   if [ -z "$JPDA_OPTS" ]; then
@@ -68,12 +71,10 @@ ADEPTJ_RUNTIME_OPTS="${JVM_OPTS} ${RESTEASY_OPTS}
  -Dtls.version=TLSv1.3 \
  -Dscan.startup.aware.classes=true \
  -Dwebsocket.logs.tailing.delay=5000 \
- -Dwait.time.for.debug.attach=5 \
  -Dlog.async=true \
  -Dlog.immediate.flush=true \
  -Dfelix.log.level=1 \
- -Dbenchmark.bundle.start=false \
- -Dprovision.bundles.explicitly=false \
+ -Dforce.provision.bundles=false \
  -Dshutdown.wait.time=30000 \
  -Dadeptj.session.timeout=3600 \
  -Dmax.concurrent.requests=5000 \
