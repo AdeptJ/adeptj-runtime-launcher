@@ -71,7 +71,7 @@
         <txw2.version>2.3.3</txw2.version>
 
         <!-- AdeptJ Runtime Dependencies Start -->
-        <adeptj-runtime.version>1.0.14-SNAPSHOT</adeptj-runtime.version>
+        <adeptj-runtime.version>1.0.0</adeptj-runtime.version>
         <!-- AdeptJ Runtime Dependencies End -->
     </properties>
 
@@ -1455,13 +1455,6 @@
                     <scope>provided</scope>
                 </dependency>
 
-                <!-- Needed by MongoJack-->
-                <dependency>
-                    <groupId>jakarta.persistence</groupId>
-                    <artifactId>jakarta.persistence-api</artifactId>
-                    <scope>provided</scope>
-                </dependency>
-
                 <dependency>
                     <groupId>org.mongojack</groupId>
                     <artifactId>mongojack</artifactId>
@@ -1471,6 +1464,23 @@
                 <dependency>
                     <groupId>com.adeptj</groupId>
                     <artifactId>adeptj-modules-data-mongodb</artifactId>
+                    <scope>provided</scope>
+                </dependency>
+
+            </dependencies>
+
+        </profile>
+
+        <profile>
+
+            <id>MongoJack-JPA-API</id>
+
+            <dependencies>
+
+                <!-- Needed by MongoJack-->
+                <dependency>
+                    <groupId>jakarta.persistence</groupId>
+                    <artifactId>jakarta.persistence-api</artifactId>
                     <scope>provided</scope>
                 </dependency>
 
