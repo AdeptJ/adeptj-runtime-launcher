@@ -1262,6 +1262,12 @@
 
                 <dependency>
                     <groupId>com.adeptj</groupId>
+                    <artifactId>adeptj-modules-data-mybatis-api</artifactId>
+                    <scope>provided</scope>
+                </dependency>
+
+                <dependency>
+                    <groupId>com.adeptj</groupId>
                     <artifactId>adeptj-modules-data-mybatis</artifactId>
                     <scope>provided</scope>
                 </dependency>
@@ -1458,6 +1464,12 @@
                 <dependency>
                     <groupId>org.mongojack</groupId>
                     <artifactId>mongojack</artifactId>
+                    <scope>provided</scope>
+                </dependency>
+
+                <dependency>
+                    <groupId>com.adeptj</groupId>
+                    <artifactId>adeptj-modules-data-mongodb-api</artifactId>
                     <scope>provided</scope>
                 </dependency>
 
