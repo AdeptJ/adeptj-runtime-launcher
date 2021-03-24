@@ -8,7 +8,7 @@ MVN_PROFILES="no-shade,Jackson,JDBC-CP-Hikari,JPA-EclipseLink,MyBatis,MySQL,MySQ
 Unirest,\
 FelixObservability,\
 JakartaConcurrency,\
-Cayenne,\
+Incubating,\
 OAuth2,\
 Email"
 echo "${GREEN}"
