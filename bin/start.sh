@@ -41,7 +41,7 @@ RESTEASY_OPTS=" -Dresteasy.allowGzip=true -Dresteasy.role.based.security=true"
 
 JVM_MEM_OPTS="-Xms256m -Xmx512m -XX:MetaspaceSize=128m -XX:MaxMetaspaceSize=256m"
 
-JVM_OPTS="--illegal-access=permit -server ${JVM_MEM_OPTS}"
+JVM_OPTS="-server ${JVM_MEM_OPTS}"
 
 if [ "$1" = "jpda" ] ; then
   if [ -z "$JPDA_TRANSPORT" ]; then
