@@ -1521,6 +1521,13 @@
             <id>OAuth2</id>
 
             <dependencies>
+            
+                <dependency>
+                    <groupId>com.github.scribejava</groupId>
+                    <artifactId>scribejava-java8</artifactId>
+                    <version>${scribejava.version}</version>
+                    <scope>provided</scope>
+                </dependency>
 
                 <dependency>
                     <groupId>com.github.scribejava</groupId>
