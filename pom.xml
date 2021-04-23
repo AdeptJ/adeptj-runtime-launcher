@@ -62,7 +62,7 @@
         <jakarta.mail.version>1.6.6</jakarta.mail.version>
         <jakarta.el.version>3.0.3</jakarta.el.version>
         <eclipselink.jakarta.persistence.version>2.2.3</eclipselink.jakarta.persistence.version>
-        <mime4j.version>0.8.3</mime4j.version>
+        <mime4j.version>0.8.4</mime4j.version>
         <asm.version>9.1</asm.version>
 
         <!-- JAX-B Dependencies JDK 10+ -->
@@ -79,13 +79,13 @@
     <!-- Project Information -->
     <organization>
         <name>AdeptJ</name>
-        <url>http://www.adeptj.com</url>
+        <url>https://www.adeptj.com</url>
     </organization>
 
     <licenses>
         <license>
             <name>Apache License Version 2.0</name>
-            <url>http://www.apache.org/licenses/LICENSE-2.0.html</url>
+            <url>https://www.apache.org/licenses/LICENSE-2.0.html</url>
             <distribution>repo</distribution>
         </license>
     </licenses>
@@ -97,7 +97,7 @@
             <email>irakeshk@outlook.com</email>
             <url>https://www.linkedin.com/in/rakeshk15</url>
             <organization>AdeptJ</organization>
-            <organizationUrl>http://www.adeptj.com</organizationUrl>
+            <organizationUrl>https://www.adeptj.com</organizationUrl>
             <roles>
                 <role>architect</role>
                 <role>lead developer</role>
