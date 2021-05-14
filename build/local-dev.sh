@@ -6,7 +6,6 @@ RESTORE=$(echo -en '\033[0m')
 # maven profiles to include support in runtime
 MVN_PROFILES="no-shade,Jackson,JDBC-CP-Hikari,JPA-EclipseLink,MyBatis,MySQL,MySQL-Protobuf,MariaDB,PostgreSQL,MongoDB,\
 Unirest,\
-FelixObservability,\
 JakartaConcurrency,\
 Incubating,\
 OAuth2,\

@@ -960,12 +960,6 @@
 
         <dependency>
             <groupId>org.apache.felix</groupId>
-            <artifactId>org.apache.felix.healthcheck.annotation</artifactId>
-            <scope>compile</scope>
-        </dependency>
-
-        <dependency>
-            <groupId>org.apache.felix</groupId>
             <artifactId>org.apache.felix.configadmin.plugin.interpolation</artifactId>
             <scope>provided</scope>
         </dependency>
@@ -1086,58 +1080,6 @@
     <!-- Plan is to modularize the build process using Maven profiles. -->
 
     <profiles>
-
-        <profile>
-
-            <id>FelixObservability</id>
-
-            <dependencies>
-
-                <dependency>
-                    <groupId>org.apache.felix</groupId>
-                    <artifactId>org.apache.felix.healthcheck.api</artifactId>
-                    <scope>provided</scope>
-                </dependency>
-
-                <dependency>
-                    <groupId>org.apache.felix</groupId>
-                    <artifactId>org.apache.felix.healthcheck.core</artifactId>
-                    <scope>provided</scope>
-                </dependency>
-
-                <dependency>
-                    <groupId>org.apache.felix</groupId>
-                    <artifactId>org.apache.felix.healthcheck.generalchecks</artifactId>
-                    <scope>provided</scope>
-                </dependency>
-
-                <dependency>
-                    <groupId>org.apache.felix</groupId>
-                    <artifactId>org.apache.felix.healthcheck.webconsoleplugin</artifactId>
-                    <scope>provided</scope>
-                </dependency>
-
-                <dependency>
-                    <groupId>org.apache.felix</groupId>
-                    <artifactId>org.apache.felix.systemready</artifactId>
-                    <scope>provided</scope>
-                    <exclusions>
-                        <exclusion>
-                            <groupId>org.ops4j.pax.url</groupId>
-                            <artifactId>pax-url-aether</artifactId>
-                        </exclusion>
-                    </exclusions>
-                </dependency>
-
-                <dependency>
-                    <groupId>org.apache.felix</groupId>
-                    <artifactId>org.apache.felix.rootcause</artifactId>
-                    <scope>provided</scope>
-                </dependency>
-
-            </dependencies>
-
-        </profile>
 
         <profile>
 
