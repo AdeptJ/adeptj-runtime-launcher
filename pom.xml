@@ -59,7 +59,7 @@
         <glassfish.jakarta.json.version>1.1.6</glassfish.jakarta.json.version>
         <jakarta.enterprise.concurrent.version>1.1.1</jakarta.enterprise.concurrent.version>
         <jakarta.activation.version>1.2.2</jakarta.activation.version>
-        <jakarta.mail.version>1.6.6</jakarta.mail.version>
+        <jakarta.mail.version>1.6.7</jakarta.mail.version>
         <jakarta.el.version>3.0.3</jakarta.el.version>
         <eclipselink.jakarta.persistence.version>2.2.3</eclipselink.jakarta.persistence.version>
         <mime4j.version>0.8.4</mime4j.version>
