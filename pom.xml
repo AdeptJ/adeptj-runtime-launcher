@@ -67,9 +67,9 @@
 
         <!-- JAX-B Dependencies JDK 10+ -->
         <jakarta.xml.bind-api.version>2.3.3</jakarta.xml.bind-api.version>
-        <jaxb-runtime.version>2.3.3</jaxb-runtime.version>
-        <istack-commons-runtime.version>3.0.11</istack-commons-runtime.version>
-        <txw2.version>2.3.3</txw2.version>
+        <jaxb-runtime.version>2.3.4</jaxb-runtime.version>
+        <istack-commons-runtime.version>3.0.12</istack-commons-runtime.version>
+        <txw2.version>2.3.4</txw2.version>
 
         <!-- AdeptJ Runtime Dependencies Start -->
         <adeptj-runtime.version>1.0.0</adeptj-runtime.version>
