@@ -57,7 +57,6 @@
         <classmate.version>1.5.1</classmate.version>
         <yasson.version>1.0.9</yasson.version>
         <glassfish.jakarta.json.version>1.1.6</glassfish.jakarta.json.version>
-        <jakarta.enterprise.concurrent.version>1.1.1</jakarta.enterprise.concurrent.version>
         <jakarta.activation.version>1.2.2</jakarta.activation.version>
         <jakarta.mail.version>1.6.7</jakarta.mail.version>
         <jakarta.el.version>3.0.3</jakarta.el.version>
@@ -785,12 +784,6 @@
 
         <dependency>
             <groupId>org.apache.felix</groupId>
-            <artifactId>org.apache.felix.jaas</artifactId>
-            <scope>provided</scope>
-        </dependency>
-
-        <dependency>
-            <groupId>org.apache.felix</groupId>
             <artifactId>org.apache.felix.converter</artifactId>
             <scope>provided</scope>
         </dependency>
@@ -1080,29 +1073,6 @@
     <!-- Plan is to modularize the build process using Maven profiles. -->
 
     <profiles>
-
-        <profile>
-
-            <id>JakartaConcurrency</id>
-
-            <dependencies>
-
-                <dependency>
-                    <groupId>jakarta.enterprise.concurrent</groupId>
-                    <artifactId>jakarta.enterprise.concurrent-api</artifactId>
-                    <scope>provided</scope>
-                </dependency>
-
-                <dependency>
-                    <groupId>org.glassfish</groupId>
-                    <artifactId>jakarta.enterprise.concurrent</artifactId>
-                    <version>${jakarta.enterprise.concurrent.version}</version>
-                    <scope>provided</scope>
-                </dependency>
-
-            </dependencies>
-
-        </profile>
 
         <profile>
 
@@ -1498,23 +1468,6 @@
                 <dependency>
                     <groupId>org.apache.commons</groupId>
                     <artifactId>commons-email</artifactId>
-                    <scope>provided</scope>
-                </dependency>
-
-            </dependencies>
-
-        </profile>
-
-        <profile>
-
-            <id>Unirest</id>
-
-            <dependencies>
-
-                <dependency>
-                    <groupId>com.google.code.gson</groupId>
-                    <artifactId>gson</artifactId>
-                    <version>2.8.6</version>
                     <scope>provided</scope>
                 </dependency>
 
