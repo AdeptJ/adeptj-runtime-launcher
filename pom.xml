@@ -391,12 +391,6 @@
             <scope>compile</scope>
         </dependency>
 
-        <dependency>
-            <groupId>jakarta.websocket</groupId>
-            <artifactId>jakarta.websocket-api</artifactId>
-            <scope>compile</scope>
-        </dependency>
-
         <!-- JSR 374 [JSON-P] Specification API -->
 
         <dependency>
