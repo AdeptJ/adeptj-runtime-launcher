@@ -7,7 +7,8 @@ RESTORE=$(echo -en '\033[0m')
 MVN_PROFILES="no-shade,Jackson,JDBC-CP-Hikari,JPA-EclipseLink,MyBatis,MySQL,MySQL-Protobuf,MariaDB,PostgreSQL,MongoDB,\
 Incubating,\
 OAuth2,\
-Email"
+Email,\
+Jetty-HttpClient"
 echo "${GREEN}"
 echo -e "######################################################################################"
 echo -e "# Building AdeptJ Runtime with following maven profiles                              #"

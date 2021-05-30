@@ -1058,6 +1058,51 @@
 
         <profile>
 
+            <id>Jetty-HttpClient</id>
+
+            <dependencies>
+
+                <dependency>
+                    <groupId>org.eclipse.jetty</groupId>
+                    <artifactId>jetty-client</artifactId>
+                    <version>11.0.3</version>
+                    <scope>provided</scope>
+                </dependency>
+
+                <dependency>
+                    <groupId>org.eclipse.jetty</groupId>
+                    <artifactId>jetty-http</artifactId>
+                    <version>11.0.3</version>
+                    <scope>provided</scope>
+                </dependency>
+
+                <dependency>
+                    <groupId>org.eclipse.jetty</groupId>
+                    <artifactId>jetty-util</artifactId>
+                    <version>11.0.3</version>
+                    <scope>provided</scope>
+                </dependency>
+
+                <dependency>
+                    <groupId>org.eclipse.jetty</groupId>
+                    <artifactId>jetty-io</artifactId>
+                    <version>11.0.3</version>
+                    <scope>provided</scope>
+                </dependency>
+
+                <dependency>
+                    <groupId>org.eclipse.jetty</groupId>
+                    <artifactId>jetty-alpn-client</artifactId>
+                    <version>11.0.3</version>
+                    <scope>provided</scope>
+                </dependency>
+
+            </dependencies>
+
+        </profile>
+
+        <profile>
+
             <!-- Needed on Windows OS for generating and interpreting ANSI escape sequences -->
             <id>Jansi</id>
 
