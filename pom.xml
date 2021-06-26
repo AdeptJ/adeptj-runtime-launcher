@@ -1298,13 +1298,13 @@
 
                 <dependency>
                     <groupId>com.adeptj</groupId>
-                    <artifactId>adeptj-modules-data-jpa-eclipselink-extension</artifactId>
+                    <artifactId>adeptj-modules-data-jpa-eclipselink</artifactId>
                     <scope>provided</scope>
                 </dependency>
 
                 <dependency>
                     <groupId>com.adeptj</groupId>
-                    <artifactId>adeptj-modules-data-jpa-base</artifactId>
+                    <artifactId>adeptj-modules-data-jpa-eclipselink-extension</artifactId>
                     <scope>provided</scope>
                 </dependency>
 
