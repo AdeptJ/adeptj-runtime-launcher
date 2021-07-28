@@ -1365,10 +1365,10 @@
 
         </profile>
 
-        <!-- Protobuf is only needed in case of MySQL XDev APi usage-->
+        <!-- Protobuf is only needed in case of MySQL XDev API usage-->
         <profile>
 
-            <id>MySQL-Protobuf</id>
+            <id>MySQL-With-Protobuf</id>
 
             <dependencies>
 
@@ -1450,6 +1450,13 @@
                     <scope>provided</scope>
                 </dependency>
 
+                <!-- Needed by MongoJack-->
+                <dependency>
+                    <groupId>jakarta.persistence</groupId>
+                    <artifactId>jakarta.persistence-api</artifactId>
+                    <scope>provided</scope>
+                </dependency>
+
                 <dependency>
                     <groupId>org.mongojack</groupId>
                     <artifactId>mongojack</artifactId>
@@ -1465,23 +1472,6 @@
                 <dependency>
                     <groupId>com.adeptj</groupId>
                     <artifactId>adeptj-modules-data-mongodb</artifactId>
-                    <scope>provided</scope>
-                </dependency>
-
-            </dependencies>
-
-        </profile>
-
-        <profile>
-
-            <id>MongoJack-JPA-API</id>
-
-            <dependencies>
-
-                <!-- Needed by MongoJack-->
-                <dependency>
-                    <groupId>jakarta.persistence</groupId>
-                    <artifactId>jakarta.persistence-api</artifactId>
                     <scope>provided</scope>
                 </dependency>
 
