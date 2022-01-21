@@ -1451,11 +1451,13 @@
                 </dependency>
 
                 <!-- Needed by MongoJack-->
+                <!-- 21-01-2022 | Commenting it because it is causing LinkageError when the EntityManagerFactory is
+                created by jpa module
                 <dependency>
                     <groupId>jakarta.persistence</groupId>
                     <artifactId>jakarta.persistence-api</artifactId>
                     <scope>provided</scope>
-                </dependency>
+                </dependency -->
 
                 <dependency>
                     <groupId>org.mongojack</groupId>
