@@ -726,6 +726,11 @@
             <scope>compile</scope>
         </dependency>
 
+        <dependency>
+            <groupId>com.github.f4b6a3</groupId>
+            <artifactId>uuid-creator</artifactId>
+        </dependency>
+
         <!-- Misc Dependencies End -->
 
         <!-- OSGi/Apache Felix Dependencies Start -->
