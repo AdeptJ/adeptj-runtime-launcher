@@ -1523,6 +1523,12 @@
                     <scope>provided</scope>
                 </dependency>
 
+                <dependency>
+                    <groupId>com.adeptj</groupId>
+                    <artifactId>adeptj-modules-commons-email</artifactId>
+                    <scope>provided</scope>
+                </dependency>
+
             </dependencies>
 
         </profile>
