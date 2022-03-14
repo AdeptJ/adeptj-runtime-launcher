@@ -48,7 +48,7 @@
         <jdeparser.version>2.0.3.Final</jdeparser.version>
         <jboss-classfilewriter.version>1.2.5.Final</jboss-classfilewriter.version>
         <maven-shade-plugin.version>3.2.4</maven-shade-plugin.version>
-        <maven-dependency-plugin.version>3.2.0</maven-dependency-plugin.version>
+        <maven-dependency-plugin.version>3.3.0</maven-dependency-plugin.version>
         <maven-assembly-plugin.version>3.3.0</maven-assembly-plugin.version>
         <jansi.version>1.18</jansi.version>
         <classmate.version>1.5.1</classmate.version>
