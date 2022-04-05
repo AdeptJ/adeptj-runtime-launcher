@@ -59,7 +59,7 @@
         <jakarta.el.version>3.0.4</jakarta.el.version>
         <eclipselink.jakarta.persistence.version>2.2.3</eclipselink.jakarta.persistence.version>
         <mime4j.version>0.8.6</mime4j.version>
-        <asm.version>9.2</asm.version>
+        <asm.version>9.3</asm.version>
 
         <!-- JAX-B Dependencies JDK 10+ -->
         <jakarta.xml.bind-api.version>2.3.3</jakarta.xml.bind-api.version>
