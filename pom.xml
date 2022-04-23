@@ -1430,6 +1430,12 @@
                     <artifactId>bson</artifactId>
                     <scope>provided</scope>
                 </dependency>
+                
+                <dependency>
+                    <groupId>org.mongodb</groupId>
+                    <artifactId>bson-record-codec</artifactId>
+                    <scope>provided</scope>
+                </dependency>
 
                 <dependency>
                     <groupId>org.mongodb</groupId>
