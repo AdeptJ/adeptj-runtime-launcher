@@ -754,6 +754,12 @@
             <artifactId>org.osgi.util.converter</artifactId>
             <scope>provided</scope>
         </dependency>
+        
+        <dependency>
+          <groupId>org.osgi</groupId>
+          <artifactId>org.osgi.service.component</artifactId>
+          <scope>provided</scope>
+        </dependency>
 
         <dependency>
             <groupId>org.apache.felix</groupId>
