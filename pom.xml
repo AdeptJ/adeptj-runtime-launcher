@@ -683,14 +683,6 @@
             <scope>provided</scope>
         </dependency>
 
-        <!-- Required by smallrye-config -->
-        <dependency>
-            <groupId>org.ow2.asm</groupId>
-            <artifactId>asm</artifactId>
-            <version>${asm.version}</version>
-            <scope>provided</scope>
-        </dependency>
-
         <!-- JAX-B Implementation Dependencies | These are unavailable on JDK11-->
 
         <dependency>
