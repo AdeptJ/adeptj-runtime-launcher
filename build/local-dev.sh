@@ -8,7 +8,8 @@ MVN_PROFILES="no-shade,Jackson,JDBC-CP-Hikari,JPA-EclipseLink,MyBatis,MySQL-With
 Incubating,\
 OAuth2,\
 Email,\
-Jetty-HttpClient"
+Jetty-HttpClient,\
+Aries-SPIFY"
 echo "${GREEN}"
 echo -e "######################################################################################"
 echo -e "# Building AdeptJ Runtime with following maven profiles                              #"
