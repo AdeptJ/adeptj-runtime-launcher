@@ -87,6 +87,7 @@ ADEPTJ_RUNTIME_OPTS="${JVM_OPTS} ${RESTEASY_OPTS}
  -Dorg.jboss.logging.provider=slf4j \
  -Doverwrite.server.conf.file=false \
  -Doverwrite.framework.conf.file=false \
+ -Denable.felix.fileinstall=false \
  -Dadeptj.rt.log.framework.error=true"
 
 cd target || exit
