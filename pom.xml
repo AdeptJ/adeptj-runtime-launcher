@@ -1586,6 +1586,58 @@
 
         <profile>
 
+            <id>GraphQL</id>
+
+            <dependencies>
+
+                <dependency>
+                    <groupId>org.antlr</groupId>
+                    <artifactId>antlr4-runtime</artifactId>
+                    <version>4.9.1</version>
+                    <scope>provided</scope>
+                </dependency>
+
+                <dependency>
+                    <groupId>javax.websocket</groupId>
+                    <artifactId>javax.websocket-api</artifactId>
+                    <version>1.1</version>
+                    <scope>provided</scope>
+                </dependency>
+
+                <dependency>
+                    <groupId>com.graphql-java</groupId>
+                    <artifactId>java-dataloader</artifactId>
+                    <version>3.2.0</version>
+                    <scope>provided</scope>
+                </dependency>
+
+                <dependency>
+                    <groupId>com.graphql-java</groupId>
+                    <artifactId>graphql-java</artifactId>
+                    <version>18.3</version>
+                    <scope>provided</scope>
+                </dependency>
+
+                <dependency>
+                    <groupId>com.graphql-java-kickstart</groupId>
+                    <artifactId>graphql-java-kickstart</artifactId>
+                    <version>13.0.0</version>
+                    <scope>provided</scope>
+                </dependency>
+
+                <dependency>
+                    <groupId>com.graphql-java-kickstart</groupId>
+                    <artifactId>graphql-java-servlet</artifactId>
+                    <version>13.0.0</version>
+                    <scope>provided</scope>
+                </dependency>
+
+            </dependencies>
+
+        </profile>
+
+        <profile>
+
             <id>shade</id>
 
             <build>

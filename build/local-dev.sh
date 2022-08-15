@@ -9,6 +9,7 @@ Incubating,\
 OAuth2,\
 Email,\
 Jetty-HttpClient,\
+GraphQL,\
 Aries-SPIFY"
 echo "${GREEN}"
 echo -e "######################################################################################"
