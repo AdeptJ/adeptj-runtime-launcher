@@ -52,8 +52,9 @@
         <maven-assembly-plugin.version>3.4.2</maven-assembly-plugin.version>
         <jansi.version>2.4.0</jansi.version>
         <classmate.version>1.5.1</classmate.version>
-        <yasson.version>1.0.11</yasson.version>
-        <glassfish.jakarta.json.version>1.1.6</glassfish.jakarta.json.version>
+        <yasson.version>3.0.1</yasson.version>
+        <eclipse.parsson.version>1.1.1</eclipse.parsson.version>
+        <johnzon.version>1.2.18</johnzon.version>
         <jakarta.activation.version>1.2.2</jakarta.activation.version>
         <jakarta.mail.version>1.6.7</jakarta.mail.version>
         <jakarta.el.version>3.0.4</jakarta.el.version>
@@ -374,7 +375,7 @@
             <scope>compile</scope>
         </dependency>
 
-        <!-- JSR 374 [JSON-P] Specification API -->
+        <!-- JSR 374 [JSON-P] Specification API v2.0 -->
 
         <dependency>
             <groupId>jakarta.json</groupId>
@@ -382,28 +383,60 @@
             <scope>compile</scope>
         </dependency>
 
-        <!-- JSR 374 [JSON-P] RI -->
+        <!-- JSR 374 [JSON-P] Impl -->
         <dependency>
-            <groupId>org.glassfish</groupId>
-            <artifactId>jakarta.json</artifactId>
-            <version>${glassfish.jakarta.json.version}</version>
-            <classifier>module</classifier>
+            <groupId>org.eclipse.parsson</groupId>
+            <artifactId>parsson</artifactId>
+            <version>${eclipse.parsson.version}</version>
             <scope>compile</scope>
         </dependency>
 
-        <!-- JSR 367 [JSON-B] Specification API-->
-
+        <!-- JSR 367 [JSON-B] Specification API v3.0 -->
         <dependency>
             <groupId>jakarta.json.bind</groupId>
             <artifactId>jakarta.json.bind-api</artifactId>
             <scope>compile</scope>
         </dependency>
 
-        <!-- Eclipse Yasson, JSR 367 [JSON-B] RI -->
+        <!-- Eclipse Yasson, JSR 367 [JSON-B] RI v3.0 -->
         <dependency>
             <groupId>org.eclipse</groupId>
             <artifactId>yasson</artifactId>
             <version>${yasson.version}</version>
+            <scope>compile</scope>
+        </dependency>
+
+        <!-- Johnzon v1.2.18 JSON-P v1.1 JSON-B v1.0-->
+        <dependency>
+            <groupId>org.apache.geronimo.specs</groupId>
+            <artifactId>geronimo-json_1.1_spec</artifactId>
+            <scope>compile</scope>
+        </dependency>
+
+        <dependency>
+            <groupId>org.apache.geronimo.specs</groupId>
+            <artifactId>geronimo-jsonb_1.0_spec</artifactId>
+            <scope>compile</scope>
+        </dependency>
+
+        <dependency>
+            <groupId>org.apache.johnzon</groupId>
+            <artifactId>johnzon-core</artifactId>
+            <version>${johnzon.version}</version>
+            <scope>compile</scope>
+        </dependency>
+
+        <dependency>
+            <groupId>org.apache.johnzon</groupId>
+            <artifactId>johnzon-mapper</artifactId>
+            <version>${johnzon.version}</version>
+            <scope>compile</scope>
+        </dependency>
+
+        <dependency>
+            <groupId>org.apache.johnzon</groupId>
+            <artifactId>johnzon-jsonb</artifactId>
+            <version>${johnzon.version}</version>
             <scope>compile</scope>
         </dependency>
 
