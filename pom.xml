@@ -1483,7 +1483,7 @@
 
                 <!-- Needed by MongoJack-->
                 <!-- 21-01-2022 | Commenting it because it is causing LinkageError when the EntityManagerFactory is
-                created by jpa module
+                created by jpa module, uncomment it if EclipseLink profile is not activated.
                 <dependency>
                     <groupId>jakarta.persistence</groupId>
                     <artifactId>jakarta.persistence-api</artifactId>
