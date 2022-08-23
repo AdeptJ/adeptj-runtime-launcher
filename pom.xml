@@ -377,36 +377,36 @@
 
         <!-- JSR 374 [JSON-P] Specification API v2.0 -->
 
-        <dependency>
-            <groupId>jakarta.json</groupId>
-            <artifactId>jakarta.json-api</artifactId>
-            <scope>compile</scope>
-        </dependency>
+<!--        <dependency>-->
+<!--            <groupId>jakarta.json</groupId>-->
+<!--            <artifactId>jakarta.json-api</artifactId>-->
+<!--            <scope>compile</scope>-->
+<!--        </dependency>-->
 
-        <!-- JSR 374 [JSON-P] Impl -->
-        <dependency>
-            <groupId>org.eclipse.parsson</groupId>
-            <artifactId>parsson</artifactId>
-            <version>${eclipse.parsson.version}</version>
-            <scope>compile</scope>
-        </dependency>
+        <!-- JSR 374 [JSON-P] v2.0 RI -->
+<!--        <dependency>-->
+<!--            <groupId>org.eclipse.parsson</groupId>-->
+<!--            <artifactId>parsson</artifactId>-->
+<!--            <version>${eclipse.parsson.version}</version>-->
+<!--            <scope>compile</scope>-->
+<!--        </dependency>-->
 
         <!-- JSR 367 [JSON-B] Specification API v3.0 -->
-        <dependency>
-            <groupId>jakarta.json.bind</groupId>
-            <artifactId>jakarta.json.bind-api</artifactId>
-            <scope>compile</scope>
-        </dependency>
+<!--        <dependency>-->
+<!--            <groupId>jakarta.json.bind</groupId>-->
+<!--            <artifactId>jakarta.json.bind-api</artifactId>-->
+<!--            <scope>compile</scope>-->
+<!--        </dependency>-->
 
         <!-- Eclipse Yasson, JSR 367 [JSON-B] RI v3.0 -->
-        <dependency>
-            <groupId>org.eclipse</groupId>
-            <artifactId>yasson</artifactId>
-            <version>${yasson.version}</version>
-            <scope>compile</scope>
-        </dependency>
+<!--        <dependency>-->
+<!--            <groupId>org.eclipse</groupId>-->
+<!--            <artifactId>yasson</artifactId>-->
+<!--            <version>${yasson.version}</version>-->
+<!--            <scope>compile</scope>-->
+<!--        </dependency>-->
 
-        <!-- Johnzon v1.2.18 JSON-P v1.1 JSON-B v1.0-->
+        <!-- Johnzon v1.2.19 JSON-P v1.1 JSON-B v1.0-->
         <dependency>
             <groupId>org.apache.geronimo.specs</groupId>
             <artifactId>geronimo-json_1.1_spec</artifactId>
