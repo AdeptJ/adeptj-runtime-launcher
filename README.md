@@ -28,7 +28,7 @@
 2. Clone [adeptj-parent](https://github.com/AdeptJ/adeptj-parent) and run **mvn clean install** to have the current parent version in local .m2
 3. Since adeptj-runtime needs adeptj-modules therefore clone [adeptj-modules](https://github.com/AdeptJ/adeptj-modules) and build it locally by running **mvn clean install** in adeptj-modules base directory.
 4. clone [adeptj-runtime](https://github.com/AdeptJ/adeptj-runtime) and run **mvn clean install**.
-5. Now come to adeptj-runtime-launcher base directory and execute this command ./etc/build.sh
+5. Now come to adeptj-runtime-launcher base directory and execute any of the maven profile script according to your requirements, e.g. ./build/minimal.sh
 6. Above step will create AdeptJ Runtime Launcher Uber jar with the /lib directory on the classpath.
 7. Now from adeptj-runtime-launcher directory itself execute this command ./bin/start.sh
 8. Start script will work on JDK 11 and so on.
