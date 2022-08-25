@@ -12,7 +12,7 @@
             <directory>${project.basedir}/lib</directory>
         </fileSet>
         <fileSet>
-            <directory>${project.basedir}/conf</directory>
+            <directory>${project.basedir}/haproxy</directory>
         </fileSet>
         <fileSet>
             <directory>${project.basedir}/bin</directory>
