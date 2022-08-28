@@ -8,7 +8,7 @@ MVN_PROFILES="no-shade,Jackson,JDBC-CP-Hikari,JPA-EclipseLink,MyBatis,MySQL-With
 Incubating,\
 OAuth2,\
 Email,\
-Jetty-HttpClient,\
+Jetty-Server,\
 GraphQL,\
 Aries-SPIFY"
 echo "${GREEN}"

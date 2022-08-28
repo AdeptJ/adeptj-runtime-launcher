@@ -62,6 +62,8 @@
         <mime4j.version>0.8.7</mime4j.version>
         <asm.version>9.3</asm.version>
         <aries.spifly.version>1.3.5</aries.spifly.version>
+        <jetty.version>10.0.11</jetty.version>
+        <tomcat.version>9.0.65</tomcat.version>
 
         <!-- JAX-B Dependencies JDK 10+ -->
         <jakarta.xml.bind-api.version>2.3.3</jakarta.xml.bind-api.version>
@@ -1071,6 +1073,90 @@
     <!-- Plan is to modularize the build process using Maven profiles. -->
 
     <profiles>
+
+        <profile>
+
+            <id>Tomcat-Server</id>
+
+            <dependencies>
+                <dependency>
+                    <groupId>com.adeptj</groupId>
+                    <artifactId>adeptj-runtime-tomcat</artifactId>
+                    <version>1.0.0-SNAPSHOT</version>
+                </dependency>
+
+                <dependency>
+                    <groupId>org.apache.tomcat</groupId>
+                    <artifactId>tomcat-annotations-api</artifactId>
+                    <version>${tomcat.version}</version>
+                </dependency>
+
+                <dependency>
+                    <groupId>org.apache.tomcat.embed</groupId>
+                    <artifactId>tomcat-embed-core</artifactId>
+                    <version>${tomcat.version}</version>
+                </dependency>
+
+            </dependencies>
+
+        </profile>
+
+        <profile>
+            <id>Jetty-Server</id>
+
+            <dependencies>
+
+                <dependency>
+                    <groupId>com.adeptj</groupId>
+                    <artifactId>adeptj-runtime-jetty</artifactId>
+                    <version>1.0.0-SNAPSHOT</version>
+                </dependency>
+
+                <dependency>
+                    <groupId>org.eclipse.jetty</groupId>
+                    <artifactId>jetty-util</artifactId>
+                    <version>${jetty.version}</version>
+                </dependency>
+
+                <dependency>
+                    <groupId>org.eclipse.jetty</groupId>
+                    <artifactId>jetty-io</artifactId>
+                    <version>${jetty.version}</version>
+                </dependency>
+
+                <dependency>
+                    <groupId>org.eclipse.jetty</groupId>
+                    <artifactId>jetty-http</artifactId>
+                    <version>${jetty.version}</version>
+                </dependency>
+
+                <dependency>
+                    <groupId>org.eclipse.jetty</groupId>
+                    <artifactId>jetty-server</artifactId>
+                    <version>${jetty.version}</version>
+                    <exclusions>
+                        <exclusion>
+                            <groupId>org.eclipse.jetty.toolchain</groupId>
+                            <artifactId>jetty-servlet-api</artifactId>
+                        </exclusion>
+                    </exclusions>
+                </dependency>
+
+                <dependency>
+                    <groupId>org.eclipse.jetty</groupId>
+                    <artifactId>jetty-security</artifactId>
+                    <version>${jetty.version}</version>
+                </dependency>
+
+                <dependency>
+                    <groupId>org.eclipse.jetty</groupId>
+                    <artifactId>jetty-servlet</artifactId>
+                    <version>${jetty.version}</version>
+                </dependency>
+
+            </dependencies>
+
+        </profile>
 
         <profile>
 
