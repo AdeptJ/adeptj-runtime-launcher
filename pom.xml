@@ -1160,6 +1160,22 @@
 
         <profile>
 
+            <id>Undertow-Server</id>
+
+            <dependencies>
+
+                <dependency>
+                    <groupId>com.adeptj</groupId>
+                    <artifactId>adeptj-runtime-undertow</artifactId>
+                    <version>1.0.0-SNAPSHOT</version>
+                </dependency>
+
+            </dependencies>
+
+        </profile>
+
+        <profile>
+
             <id>Jetty-HttpClient</id>
 
             <dependencies>
