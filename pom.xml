@@ -1294,7 +1294,31 @@
 
                 <dependency>
                     <groupId>com.adeptj</groupId>
-                    <artifactId>adeptj-modules-incubating-restclient-ahc</artifactId>
+                    <artifactId>adeptj-modules-incubating-restclient-apache</artifactId>
+                    <version>1.0.0</version>
+                    <scope>provided</scope>
+                </dependency>
+
+            </dependencies>
+
+        </profile>
+
+        <profile>
+
+            <id>OkHttp-HttpClient</id>
+
+            <dependencies>
+
+                <dependency>
+                    <groupId>com.adeptj</groupId>
+                    <artifactId>adeptj-modules-incubating-restclient-core</artifactId>
+                    <version>1.0.0</version>
+                    <scope>provided</scope>
+                </dependency>
+
+                <dependency>
+                    <groupId>com.adeptj</groupId>
+                    <artifactId>adeptj-modules-incubating-restclient-okhttp</artifactId>
                     <version>1.0.0</version>
                     <scope>provided</scope>
                 </dependency>
