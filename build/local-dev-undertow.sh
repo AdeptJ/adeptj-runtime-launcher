@@ -8,6 +8,7 @@ MVN_PROFILES="no-shade,Jackson,JDBC-CP-Hikari,JPA-EclipseLink,MyBatis,MySQL-With
 Incubating,\
 OAuth2,\
 Email,\
+Apache-HttpClient,\
 Undertow-Server,\
 GraphQL,\
 Aries-SPIFY"
