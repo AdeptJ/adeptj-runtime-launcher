@@ -55,6 +55,8 @@
         <asm.version>9.3</asm.version>
         <aries.spifly.version>1.3.5</aries.spifly.version>
         <tomcat.version>9.0.65</tomcat.version>
+        <httpcore-osgi.version>4.4.15</httpcore-osgi.version>
+        <httpclient-osgi.version>4.5.13</httpclient-osgi.version>
 
         <!-- JAX-B Dependencies JDK 10+ -->
         <jakarta.xml.bind-api.version>2.3.3</jakarta.xml.bind-api.version>
@@ -919,7 +921,7 @@
             <id>Tomcat-Server</id>
 
             <dependencies>
-                
+
                 <dependency>
                     <groupId>com.adeptj</groupId>
                     <artifactId>adeptj-runtime-tomcat</artifactId>
@@ -931,6 +933,7 @@
         </profile>
 
         <profile>
+
             <id>Jetty-Server</id>
 
             <dependencies>
@@ -1029,7 +1032,7 @@
                 <dependency>
                     <groupId>org.apache.httpcomponents</groupId>
                     <artifactId>httpcore-osgi</artifactId>
-                    <version>4.4.15</version>
+                    <version>${httpcore-osgi.version}</version>
                     <scope>provided</scope>
                     <exclusions>
                         <exclusion>
@@ -1046,7 +1049,7 @@
                 <dependency>
                     <groupId>org.apache.httpcomponents</groupId>
                     <artifactId>httpclient-osgi</artifactId>
-                    <version>4.5.13</version>
+                    <version>${httpclient-osgi.version}</version>
                     <scope>provided</scope>
                     <exclusions>
                         <exclusion>
