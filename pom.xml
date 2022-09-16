@@ -919,22 +919,11 @@
             <id>Tomcat-Server</id>
 
             <dependencies>
+                
                 <dependency>
                     <groupId>com.adeptj</groupId>
                     <artifactId>adeptj-runtime-tomcat</artifactId>
                     <version>1.0.0-SNAPSHOT</version>
-                </dependency>
-
-                <dependency>
-                    <groupId>org.apache.tomcat</groupId>
-                    <artifactId>tomcat-annotations-api</artifactId>
-                    <version>${tomcat.version}</version>
-                </dependency>
-
-                <dependency>
-                    <groupId>org.apache.tomcat.embed</groupId>
-                    <artifactId>tomcat-embed-core</artifactId>
-                    <version>${tomcat.version}</version>
                 </dependency>
 
             </dependencies>
@@ -950,48 +939,6 @@
                     <groupId>com.adeptj</groupId>
                     <artifactId>adeptj-runtime-jetty</artifactId>
                     <version>1.0.0-SNAPSHOT</version>
-                </dependency>
-
-                <dependency>
-                    <groupId>org.eclipse.jetty</groupId>
-                    <artifactId>jetty-util</artifactId>
-                    <version>${jetty-server.version}</version>
-                </dependency>
-
-                <dependency>
-                    <groupId>org.eclipse.jetty</groupId>
-                    <artifactId>jetty-io</artifactId>
-                    <version>${jetty-server.version}</version>
-                </dependency>
-
-                <dependency>
-                    <groupId>org.eclipse.jetty</groupId>
-                    <artifactId>jetty-http</artifactId>
-                    <version>${jetty-server.version}</version>
-                </dependency>
-
-                <dependency>
-                    <groupId>org.eclipse.jetty</groupId>
-                    <artifactId>jetty-server</artifactId>
-                    <version>${jetty-server.version}</version>
-                    <exclusions>
-                        <exclusion>
-                            <groupId>org.eclipse.jetty.toolchain</groupId>
-                            <artifactId>jetty-servlet-api</artifactId>
-                        </exclusion>
-                    </exclusions>
-                </dependency>
-
-                <dependency>
-                    <groupId>org.eclipse.jetty</groupId>
-                    <artifactId>jetty-security</artifactId>
-                    <version>${jetty-server.version}</version>
-                </dependency>
-
-                <dependency>
-                    <groupId>org.eclipse.jetty</groupId>
-                    <artifactId>jetty-servlet</artifactId>
-                    <version>${jetty-server.version}</version>
                 </dependency>
 
             </dependencies>
