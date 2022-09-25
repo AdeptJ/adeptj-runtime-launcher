@@ -430,6 +430,11 @@
             <scope>compile</scope>
         </dependency>
 
+        <dependency>
+            <groupId>org.apache.commons</groupId>
+            <artifactId>commons-csv</artifactId>
+        </dependency>
+
         <!-- Apache Commons Dependencies End -->
 
         <!-- Misc Dependencies Start -->
