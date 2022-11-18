@@ -44,12 +44,13 @@
         <maven-assembly-plugin.version>3.4.2</maven-assembly-plugin.version>
         <jansi.version>2.4.0</jansi.version>
         <classmate.version>1.5.1</classmate.version>
-        <yasson.version>3.0.1</yasson.version>
+        <yasson.version>3.0.2</yasson.version>
         <eclipse.parsson.version>1.1.1</eclipse.parsson.version>
         <johnzon.version>1.2.19</johnzon.version>
-        <jakarta.activation.version>1.2.2</jakarta.activation.version>
-        <jakarta.mail.version>1.6.7</jakarta.mail.version>
-        <jakarta.el.version>3.0.4</jakarta.el.version>
+        <eclipse.angus-activation.version>1.0.0</eclipse.angus-activation.version>
+        <eclipse.angus-mail.version>1.0.0</eclipse.angus-mail.version>
+        <eclipse.expressly.version>5.0.0</eclipse.expressly.version>
+        <jakarta.mail.version>2.0.1</jakarta.mail.version>
         <eclipselink.jakarta.persistence.version>2.2.3</eclipselink.jakarta.persistence.version>
         <mime4j.version>0.8.8</mime4j.version>
         <asm.version>9.4</asm.version>
@@ -63,10 +64,10 @@
         <jdeparser.version>2.0.3.Final</jdeparser.version>
 
         <!-- JAX-B Dependencies JDK 10+ -->
-        <jakarta.xml.bind-api.version>2.3.3</jakarta.xml.bind-api.version>
-        <jaxb-runtime.version>2.3.7</jaxb-runtime.version>
-        <istack-commons-runtime.version>3.0.12</istack-commons-runtime.version>
-        <txw2.version>2.3.7</txw2.version>
+        <jakarta.xml.bind-api.version>4.0.0</jakarta.xml.bind-api.version>
+        <jaxb-runtime.version>4.0.1</jaxb-runtime.version>
+        <istack-commons-runtime.version>4.1.1</istack-commons-runtime.version>
+        <txw2.version>4.0.1</txw2.version>
 
         <!-- AdeptJ Runtime Dependencies Start -->
         <adeptj-runtime.version>1.0.0</adeptj-runtime.version>
@@ -223,36 +224,50 @@
             <scope>compile</scope>
         </dependency>
 
+        <dependency>
+            <groupId>org.apache.tomcat</groupId>
+            <artifactId>tomcat-servlet-api</artifactId>
+            <version>9.0.69</version>
+            <scope>compile</scope>
+        </dependency>
+
+        <dependency>
+            <groupId>org.apache.geronimo.specs</groupId>
+            <artifactId>geronimo-annotation_1.0_spec</artifactId>
+            <version>1.1.1</version>
+            <scope>provided</scope>
+        </dependency>
+
         <!-- JSR 374 [JSON-P] Specification API v2.0 -->
 
-<!--        <dependency>-->
-<!--            <groupId>jakarta.json</groupId>-->
-<!--            <artifactId>jakarta.json-api</artifactId>-->
-<!--            <scope>compile</scope>-->
-<!--        </dependency>-->
+        <dependency>
+            <groupId>jakarta.json</groupId>
+            <artifactId>jakarta.json-api</artifactId>
+            <scope>compile</scope>
+        </dependency>
 
         <!-- JSR 374 [JSON-P] v2.0 RI -->
-<!--        <dependency>-->
-<!--            <groupId>org.eclipse.parsson</groupId>-->
-<!--            <artifactId>parsson</artifactId>-->
-<!--            <version>${eclipse.parsson.version}</version>-->
-<!--            <scope>compile</scope>-->
-<!--        </dependency>-->
+        <dependency>
+            <groupId>org.eclipse.parsson</groupId>
+            <artifactId>parsson</artifactId>
+            <version>${eclipse.parsson.version}</version>
+            <scope>compile</scope>
+        </dependency>
 
         <!-- JSR 367 [JSON-B] Specification API v3.0 -->
-<!--        <dependency>-->
-<!--            <groupId>jakarta.json.bind</groupId>-->
-<!--            <artifactId>jakarta.json.bind-api</artifactId>-->
-<!--            <scope>compile</scope>-->
-<!--        </dependency>-->
+        <dependency>
+            <groupId>jakarta.json.bind</groupId>
+            <artifactId>jakarta.json.bind-api</artifactId>
+            <scope>compile</scope>
+        </dependency>
 
         <!-- Eclipse Yasson, JSR 367 [JSON-B] RI v3.0 -->
-<!--        <dependency>-->
-<!--            <groupId>org.eclipse</groupId>-->
-<!--            <artifactId>yasson</artifactId>-->
-<!--            <version>${yasson.version}</version>-->
-<!--            <scope>compile</scope>-->
-<!--        </dependency>-->
+        <dependency>
+            <groupId>org.eclipse</groupId>
+            <artifactId>yasson</artifactId>
+            <version>${yasson.version}</version>
+            <scope>compile</scope>
+        </dependency>
 
         <!-- Johnzon v1.2.19 JSON-P v1.1 JSON-B v1.0-->
         <dependency>
@@ -295,9 +310,15 @@
         </dependency>
 
         <dependency>
-            <groupId>com.sun.activation</groupId>
-            <artifactId>jakarta.activation</artifactId>
-            <version>${jakarta.activation.version}</version>
+            <groupId>jakarta.activation</groupId>
+            <artifactId>jakarta.activation-api</artifactId>
+            <scope>compile</scope>
+        </dependency>
+
+        <dependency>
+            <groupId>org.eclipse.angus</groupId>
+            <artifactId>angus-activation</artifactId>
+            <version>${eclipse.angus-activation.version}</version>
             <scope>compile</scope>
         </dependency>
 
@@ -334,27 +355,76 @@
 
         <dependency>
             <groupId>jakarta.enterprise</groupId>
+            <artifactId>jakarta.enterprise.lang-model</artifactId>
+            <version>4.0.1</version>
+            <scope>provided</scope>
+        </dependency>
+
+        <dependency>
+            <groupId>jakarta.enterprise</groupId>
             <artifactId>jakarta.enterprise.cdi-api</artifactId>
             <scope>provided</scope>
         </dependency>
 
         <dependency>
-            <groupId>com.sun.mail</groupId>
-            <artifactId>jakarta.mail</artifactId>
-            <version>${jakarta.mail.version}</version>
+            <groupId>org.eclipse.angus</groupId>
+            <artifactId>angus-core</artifactId>
+            <version>${eclipse.angus-mail.version}</version>
             <scope>provided</scope>
-            <exclusions>
-                <exclusion>
-                    <groupId>com.sun.activation</groupId>
-                    <artifactId>jakarta.activation</artifactId>
-                </exclusion>
-            </exclusions>
         </dependency>
 
         <dependency>
-            <groupId>org.glassfish</groupId>
-            <artifactId>jakarta.el</artifactId>
-            <version>${jakarta.el.version}</version>
+            <groupId>org.eclipse.angus</groupId>
+            <artifactId>imap</artifactId>
+            <version>${eclipse.angus-mail.version}</version>
+            <scope>provided</scope>
+        </dependency>
+
+        <dependency>
+            <groupId>org.eclipse.angus</groupId>
+            <artifactId>smtp</artifactId>
+            <version>${eclipse.angus-mail.version}</version>
+            <scope>provided</scope>
+        </dependency>
+
+        <dependency>
+            <groupId>org.eclipse.angus</groupId>
+            <artifactId>pop3</artifactId>
+            <version>${eclipse.angus-mail.version}</version>
+            <scope>provided</scope>
+        </dependency>
+
+        <dependency>
+            <groupId>org.eclipse.angus</groupId>
+            <artifactId>logging-mailhandler</artifactId>
+            <version>${eclipse.angus-mail.version}</version>
+            <scope>provided</scope>
+        </dependency>
+
+        <dependency>
+            <groupId>org.eclipse.angus</groupId>
+            <artifactId>angus-mail</artifactId>
+            <version>${eclipse.angus-mail.version}</version>
+            <scope>provided</scope>
+        </dependency>
+
+        <dependency>
+            <groupId>org.eclipse.angus</groupId>
+            <artifactId>jakarta.mail</artifactId>
+            <version>${eclipse.angus-mail.version}</version>
+            <scope>provided</scope>
+        </dependency>
+
+        <dependency>
+            <groupId>jakarta.el</groupId>
+            <artifactId>jakarta.el-api</artifactId>
+            <scope>provided</scope>
+        </dependency>
+
+        <dependency>
+            <groupId>org.glassfish.expressly</groupId>
+            <artifactId>expressly</artifactId>
+            <version>${eclipse.expressly.version}</version>
             <scope>provided</scope>
         </dependency>
 
@@ -1296,13 +1366,11 @@
 
             <dependencies>
 
-                <!-- EclipseLink 2.7.8 (JPA 2.2) Dependencies -->
+                <!-- EclipseLink 4.0.0 (JPA 3) Dependencies -->
 
                 <dependency>
-                    <groupId>org.eclipse.persistence</groupId>
-                    <artifactId>jakarta.persistence</artifactId>
-                    <version>${eclipselink.jakarta.persistence.version}</version>
-                    <scope>provided</scope>
+                    <groupId>jakarta.persistence</groupId>
+                    <artifactId>jakarta.persistence-api</artifactId>
                 </dependency>
 
                 <dependency>
@@ -1349,13 +1417,6 @@
                             <artifactId>asm-commons</artifactId>
                         </exclusion>
                     </exclusions>
-                </dependency>
-
-                <dependency>
-                    <groupId>org.eclipse.persistence</groupId>
-                    <artifactId>org.eclipse.persistence.antlr</artifactId>
-                    <version>${eclipselink.version}</version>
-                    <scope>provided</scope>
                 </dependency>
 
                 <dependency>
