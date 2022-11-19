@@ -10,8 +10,7 @@ OAuth2,\
 Email,\
 Apache-HttpClient,\
 Undertow-Server,\
-GraphQL,\
-Aries-SPIFY"
+Aries-SPIFLY"
 echo "${GREEN}"
 echo -e "######################################################################################"
 echo -e "# Building AdeptJ Runtime with following maven profiles                              #"

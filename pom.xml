@@ -57,6 +57,11 @@
         <httpcore-osgi.version>4.4.15</httpcore-osgi.version>
         <httpclient-osgi.version>4.5.13</httpclient-osgi.version>
         <jandex.version>2.4.3.Final</jandex.version>
+        <!-- GraphQL -->
+        <java-dataloader.version>3.2.0</java-dataloader.version>
+        <graphql-java.version>19.2</graphql-java.version>
+        <graphql-java-kickstart.version>14.0.0</graphql-java-kickstart.version>
+        <graphql-java-servlet.version>14.0.0</graphql-java-servlet.version>
         <!-- JBoss Logging -->
         <jboss-logging.version>3.5.0.Final</jboss-logging.version>
         <jboss-logging-annotations.version>2.2.1.Final</jboss-logging-annotations.version>
@@ -64,7 +69,6 @@
         <jdeparser.version>2.0.3.Final</jdeparser.version>
 
         <!-- JAX-B Dependencies JDK 10+ -->
-        <jakarta.xml.bind-api.version>4.0.0</jakarta.xml.bind-api.version>
         <jaxb-runtime.version>4.0.1</jaxb-runtime.version>
         <istack-commons-runtime.version>4.1.1</istack-commons-runtime.version>
         <txw2.version>4.0.1</txw2.version>
@@ -318,7 +322,6 @@
         <dependency>
             <groupId>jakarta.xml.bind</groupId>
             <artifactId>jakarta.xml.bind-api</artifactId>
-            <version>${jakarta.xml.bind-api.version}</version>
             <scope>compile</scope>
         </dependency>
 
@@ -566,6 +569,13 @@
         </dependency>
 
         <!-- JAX-B Implementation Dependencies | These are unavailable on JDK11-->
+
+        <dependency>
+            <groupId>org.glassfish.jaxb</groupId>
+            <artifactId>jaxb-core</artifactId>
+            <version>${jaxb-runtime.version}</version>
+            <scope>compile</scope>
+        </dependency>
 
         <dependency>
             <groupId>org.glassfish.jaxb</groupId>
@@ -1629,7 +1639,7 @@
 
         <profile>
 
-            <id>Aries-SPIFY</id>
+            <id>Aries-SPIFLY</id>
 
             <dependencies>
 
@@ -1686,13 +1696,6 @@
             <dependencies>
 
                 <dependency>
-                    <groupId>org.antlr</groupId>
-                    <artifactId>antlr4-runtime</artifactId>
-                    <version>4.9.1</version>
-                    <scope>provided</scope>
-                </dependency>
-
-                <dependency>
                     <groupId>javax.websocket</groupId>
                     <artifactId>javax.websocket-api</artifactId>
                     <version>1.1</version>
@@ -1702,28 +1705,28 @@
                 <dependency>
                     <groupId>com.graphql-java</groupId>
                     <artifactId>java-dataloader</artifactId>
-                    <version>3.2.0</version>
+                    <version>${java-dataloader.version}</version>
                     <scope>provided</scope>
                 </dependency>
 
                 <dependency>
                     <groupId>com.graphql-java</groupId>
                     <artifactId>graphql-java</artifactId>
-                    <version>18.3</version>
+                    <version>${graphql-java.version}</version>
                     <scope>provided</scope>
                 </dependency>
 
                 <dependency>
                     <groupId>com.graphql-java-kickstart</groupId>
                     <artifactId>graphql-java-kickstart</artifactId>
-                    <version>13.0.0</version>
+                    <version>${graphql-java-kickstart.version}</version>
                     <scope>provided</scope>
                 </dependency>
 
                 <dependency>
                     <groupId>com.graphql-java-kickstart</groupId>
                     <artifactId>graphql-java-servlet</artifactId>
-                    <version>13.0.0</version>
+                    <version>${graphql-java-servlet.version}</version>
                     <scope>provided</scope>
                 </dependency>
 
