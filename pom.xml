@@ -734,14 +734,12 @@
         <dependency>
             <groupId>org.apache.felix</groupId>
             <artifactId>org.apache.felix.http.inventoryprinter</artifactId>
-            <version>1.0.0-SNAPSHOT</version>
             <scope>provided</scope>
         </dependency>
 
         <dependency>
             <groupId>org.apache.felix</groupId>
             <artifactId>org.apache.felix.http.webconsoleplugin</artifactId>
-            <version>1.0.0-SNAPSHOT</version>
             <scope>provided</scope>
         </dependency>
 
