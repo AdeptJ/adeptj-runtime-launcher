@@ -7,7 +7,6 @@ RESTORE=$(echo -en '\033[0m')
 MVN_PROFILES="no-shade,Jackson,JDBC-CP-Hikari,JPA-EclipseLink,MyBatis,MySQL-With-Protobuf,MariaDB,PostgreSQL,MongoDB,\
 Incubating,\
 OAuth2,\
-Email,\
 Apache-HttpClient,\
 Jetty-Server,\
 Aries-SPIFLY"
