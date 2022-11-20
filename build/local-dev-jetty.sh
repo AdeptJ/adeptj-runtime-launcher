@@ -4,11 +4,10 @@ GREEN=$(echo -en '\033[00;32m')
 RESTORE=$(echo -en '\033[0m')
 
 # maven profiles to include support in runtime
-MVN_PROFILES="no-shade,Jackson,JDBC-CP-Hikari,JPA-EclipseLink,MyBatis,MySQL-With-Protobuf,MariaDB,PostgreSQL,MongoDB,\
-Incubating,\
-OAuth2,\
+MVN_PROFILES="no-shade,Jackson,JDBC-CP-Hikari,JPA-EclipseLink,MyBatis,MySQL,MariaDB,PostgreSQL,MongoDB,Cayenne,OAuth2,\
 Apache-HttpClient,\
 Jetty-Server,\
+HibernateValidator-Dependencies,\
 Aries-SPIFLY"
 echo "${GREEN}"
 echo -e "######################################################################################"
