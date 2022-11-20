@@ -39,7 +39,7 @@
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <main.class>com.adeptj.runtime.core.Launcher</main.class>
         <!-- Common Dependencies -->
-        <maven-shade-plugin.version>3.3.0</maven-shade-plugin.version>
+        <maven-shade-plugin.version>3.4.1</maven-shade-plugin.version>
         <maven-dependency-plugin.version>3.3.0</maven-dependency-plugin.version>
         <maven-assembly-plugin.version>3.4.2</maven-assembly-plugin.version>
         <jakarta.servlet6-api.version>6.0.0</jakarta.servlet6-api.version>
@@ -57,6 +57,7 @@
         <httpcore-osgi.version>4.4.15</httpcore-osgi.version>
         <httpclient-osgi.version>4.5.13</httpclient-osgi.version>
         <jandex.version>2.4.3.Final</jandex.version>
+        <geronimo-annotation_1.0_spec.version>1.1.1</geronimo-annotation_1.0_spec.version>
         <!-- GraphQL -->
         <java-dataloader.version>3.2.0</java-dataloader.version>
         <graphql-java.version>19.2</graphql-java.version>
@@ -222,13 +223,6 @@
 
         <!-- Jakarta Dependencies Start -->
 
-        <dependency>
-            <groupId>org.apache.geronimo.specs</groupId>
-            <artifactId>geronimo-annotation_1.0_spec</artifactId>
-            <version>1.1.1</version>
-            <scope>provided</scope>
-        </dependency>
-
         <!-- JSR 374 [JSON-P] Specification API v2.0 -->
 
         <dependency>
@@ -264,6 +258,13 @@
             <groupId>jakarta.annotation</groupId>
             <artifactId>jakarta.annotation-api</artifactId>
             <scope>compile</scope>
+        </dependency>
+
+        <dependency>
+            <groupId>org.apache.geronimo.specs</groupId>
+            <artifactId>geronimo-annotation_1.0_spec</artifactId>
+            <version>${geronimo-annotation_1.0_spec.version}</version>
+            <scope>provided</scope>
         </dependency>
 
         <dependency>
@@ -561,6 +562,11 @@
             <scope>provided</scope>
         </dependency>
 
+        <dependency>
+            <groupId>com.github.f4b6a3</groupId>
+            <artifactId>uuid-creator</artifactId>
+        </dependency>
+
         <!-- JAX-B Implementation Dependencies | These are unavailable on JDK11-->
 
         <dependency>
@@ -589,11 +595,6 @@
             <artifactId>txw2</artifactId>
             <version>${txw2.version}</version>
             <scope>compile</scope>
-        </dependency>
-
-        <dependency>
-            <groupId>com.github.f4b6a3</groupId>
-            <artifactId>uuid-creator</artifactId>
         </dependency>
 
         <!-- Misc Dependencies End -->
