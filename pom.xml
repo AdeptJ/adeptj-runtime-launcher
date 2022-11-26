@@ -59,6 +59,7 @@
         <jandex.version>2.4.3.Final</jandex.version>
         <geronimo-annotation_1.0_spec.version>1.1.1</geronimo-annotation_1.0_spec.version>
         <javax.persistence-api.version>2.2</javax.persistence-api.version>
+        <eclipselink.asm.version>9.4.0</eclipselink.asm.version>
         <!-- GraphQL -->
         <java-dataloader.version>3.2.0</java-dataloader.version>
         <graphql-java.version>19.2</graphql-java.version>
