@@ -5,7 +5,7 @@ RESTORE=$(echo -en '\033[0m')
 
 # maven profiles to include support in runtime
 MVN_PROFILES="no-shade,Jackson,JDBC-CP-Hikari,JPA-EclipseLink,MyBatis,MySQL,MariaDB,PostgreSQL,MongoDB,Cayenne,OAuth2,\
-Jetty-HttpClient,\
+Jetty-HttpClient-With-Jetty-Server-Adapter,\
 Jetty-Server,\
 HibernateValidator-Dependencies,\
 Aries-SPIFLY"
