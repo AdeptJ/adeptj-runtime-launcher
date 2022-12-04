@@ -1094,7 +1094,7 @@
                     <scope>provided</scope>
                 </dependency>
 
-                <dependency>
+                <!--dependency>
                     <groupId>org.eclipse.jetty</groupId>
                     <artifactId>jetty-http</artifactId>
                     <version>${jetty-client.version}</version>
@@ -1120,7 +1120,7 @@
                     <artifactId>jetty-alpn-client</artifactId>
                     <version>${jetty-client.version}</version>
                     <scope>provided</scope>
-                </dependency>
+                </dependency-->
 
                 <dependency>
                     <groupId>com.adeptj</groupId>

@@ -88,6 +88,7 @@ ADEPTJ_RUNTIME_OPTS="${JVM_OPTS} ${RESTEASY_OPTS}
  -Doverwrite.server.conf.file=false \
  -Doverwrite.framework.conf.file=false \
  -Denable.felix.fileinstall=false \
+ -Dsearch.osgi.package.exports.provider=true \
  -Dadeptj.rt.log.framework.error=true"
 
 cd target || exit
