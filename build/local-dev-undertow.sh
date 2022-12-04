@@ -4,14 +4,10 @@ GREEN=$(echo -en '\033[00;32m')
 RESTORE=$(echo -en '\033[0m')
 
 # maven profiles to include support in runtime
-MVN_PROFILES="no-shade,Jackson,JDBC-CP-Hikari,JPA-EclipseLink,MyBatis,MySQL-With-Protobuf,MariaDB,PostgreSQL,MongoDB,\
-Incubating,\
-OAuth2,\
-Email,\
-Apache-HttpClient,\
+MVN_PROFILES="no-shade,Jackson,JDBC-CP-Hikari,JPA-EclipseLink,MyBatis,MySQL,MariaDB,PostgreSQL,MongoDB,Cayenne,OAuth2,\
+Jetty-HttpClient,\
 Undertow-Server,\
-GraphQL,\
-Aries-SPIFY"
+Aries-SPIFLY"
 echo "${GREEN}"
 echo -e "######################################################################################"
 echo -e "# Building AdeptJ Runtime with following maven profiles                              #"
