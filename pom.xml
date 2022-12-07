@@ -1142,7 +1142,7 @@
 
         <profile>
 
-            <id>Jetty-HttpClient-With-Jetty-Server-Adapter</id>
+            <id>Jetty-HttpClient-For-Jetty-Server-Adapter</id>
 
             <dependencies>
 
