@@ -1090,35 +1090,35 @@
                 <dependency>
                     <groupId>org.eclipse.jetty</groupId>
                     <artifactId>jetty-client</artifactId>
-                    <version>${jetty-client.version}</version>
+                    <version>${jetty.version}</version>
                     <scope>provided</scope>
                 </dependency>
 
                 <dependency>
                     <groupId>org.eclipse.jetty</groupId>
                     <artifactId>jetty-http</artifactId>
-                    <version>${jetty-client.version}</version>
+                    <version>${jetty.version}</version>
                     <scope>provided</scope>
                 </dependency>
 
                 <dependency>
                     <groupId>org.eclipse.jetty</groupId>
                     <artifactId>jetty-util</artifactId>
-                    <version>${jetty-client.version}</version>
+                    <version>${jetty.version}</version>
                     <scope>provided</scope>
                 </dependency>
 
                 <dependency>
                     <groupId>org.eclipse.jetty</groupId>
                     <artifactId>jetty-io</artifactId>
-                    <version>${jetty-client.version}</version>
+                    <version>${jetty.version}</version>
                     <scope>provided</scope>
                 </dependency>
 
                 <dependency>
                     <groupId>org.eclipse.jetty</groupId>
                     <artifactId>jetty-alpn-client</artifactId>
-                    <version>${jetty-client.version}</version>
+                    <version>${jetty.version}</version>
                     <scope>provided</scope>
                 </dependency>
 
@@ -1149,7 +1149,7 @@
                 <dependency>
                     <groupId>org.eclipse.jetty</groupId>
                     <artifactId>jetty-client</artifactId>
-                    <version>${jetty-client.version}</version>
+                    <version>${jetty.version}</version>
                     <scope>provided</scope>
                 </dependency>
 
