@@ -923,6 +923,12 @@
             <scope>provided</scope>
         </dependency>
 
+        <dependency>
+            <groupId>com.adeptj</groupId>
+            <artifactId>adeptj-modules-restclient-core</artifactId>
+            <scope>provided</scope>
+        </dependency>
+
         <!-- AdeptJ Dependencies End-->
 
         <!-- Test dependencies -->
@@ -1124,15 +1130,7 @@
 
                 <dependency>
                     <groupId>com.adeptj</groupId>
-                    <artifactId>adeptj-modules-incubating-restclient-core</artifactId>
-                    <version>1.0.0</version>
-                    <scope>provided</scope>
-                </dependency>
-
-                <dependency>
-                    <groupId>com.adeptj</groupId>
-                    <artifactId>adeptj-modules-incubating-restclient-jetty</artifactId>
-                    <version>1.0.0</version>
+                    <artifactId>adeptj-modules-restclient-jetty</artifactId>
                     <scope>provided</scope>
                 </dependency>
 
@@ -1155,15 +1153,7 @@
 
                 <dependency>
                     <groupId>com.adeptj</groupId>
-                    <artifactId>adeptj-modules-incubating-restclient-core</artifactId>
-                    <version>1.0.0</version>
-                    <scope>provided</scope>
-                </dependency>
-
-                <dependency>
-                    <groupId>com.adeptj</groupId>
-                    <artifactId>adeptj-modules-incubating-restclient-jetty</artifactId>
-                    <version>1.0.0</version>
+                    <artifactId>adeptj-modules-restclient-jetty</artifactId>
                     <scope>provided</scope>
                 </dependency>
 
@@ -1225,15 +1215,7 @@
 
                 <dependency>
                     <groupId>com.adeptj</groupId>
-                    <artifactId>adeptj-modules-incubating-restclient-core</artifactId>
-                    <version>1.0.0</version>
-                    <scope>provided</scope>
-                </dependency>
-
-                <dependency>
-                    <groupId>com.adeptj</groupId>
-                    <artifactId>adeptj-modules-incubating-restclient-apache</artifactId>
-                    <version>1.0.0</version>
+                    <artifactId>adeptj-modules-restclient-apache</artifactId>
                     <scope>provided</scope>
                 </dependency>
 
@@ -1249,15 +1231,7 @@
 
                 <dependency>
                     <groupId>com.adeptj</groupId>
-                    <artifactId>adeptj-modules-incubating-restclient-core</artifactId>
-                    <version>1.0.0</version>
-                    <scope>provided</scope>
-                </dependency>
-
-                <dependency>
-                    <groupId>com.adeptj</groupId>
-                    <artifactId>adeptj-modules-incubating-restclient-okhttp</artifactId>
-                    <version>1.0.0</version>
+                    <artifactId>adeptj-modules-restclient-okhttp</artifactId>
                     <scope>provided</scope>
                 </dependency>
 
