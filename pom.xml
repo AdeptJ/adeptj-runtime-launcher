@@ -65,6 +65,7 @@
         <graphql-java.version>20.0</graphql-java.version>
         <graphql-java-kickstart.version>15.0.0</graphql-java-kickstart.version>
         <graphql-java-servlet.version>15.0.0</graphql-java-servlet.version>
+        <jakarta.websocket.version>2.1.0</jakarta.websocket.version>
         <!-- JBoss Logging -->
         <jboss-logging.version>3.5.0.Final</jboss-logging.version>
         <jboss-logging-annotations.version>2.2.1.Final</jboss-logging-annotations.version>
@@ -1682,9 +1683,16 @@
             <dependencies>
 
                 <dependency>
-                    <groupId>javax.websocket</groupId>
-                    <artifactId>javax.websocket-api</artifactId>
-                    <version>1.1</version>
+                    <groupId>jakarta.websocket</groupId>
+                    <artifactId>jakarta.websocket-api</artifactId>
+                    <version>${jakarta.websocket.version}</version>
+                    <scope>provided</scope>
+                </dependency>
+
+                <dependency>
+                    <groupId>jakarta.websocket</groupId>
+                    <artifactId>jakarta.websocket-client-api</artifactId>
+                    <version>${jakarta.websocket.version}</version>
                     <scope>provided</scope>
                 </dependency>
 
