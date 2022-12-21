@@ -62,9 +62,9 @@
         <eclipselink.asm.version>9.4.0</eclipselink.asm.version>
         <!-- GraphQL -->
         <java-dataloader.version>3.2.0</java-dataloader.version>
-        <graphql-java.version>19.2</graphql-java.version>
-        <graphql-java-kickstart.version>14.0.0</graphql-java-kickstart.version>
-        <graphql-java-servlet.version>14.0.0</graphql-java-servlet.version>
+        <graphql-java.version>20.0</graphql-java.version>
+        <graphql-java-kickstart.version>15.0.0</graphql-java-kickstart.version>
+        <graphql-java-servlet.version>15.0.0</graphql-java-servlet.version>
         <!-- JBoss Logging -->
         <jboss-logging.version>3.5.0.Final</jboss-logging.version>
         <jboss-logging-annotations.version>2.2.1.Final</jboss-logging-annotations.version>
