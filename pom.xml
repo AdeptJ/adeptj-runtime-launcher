@@ -187,6 +187,7 @@
                 <artifactId>maven-dependency-plugin</artifactId>
                 <version>${maven-dependency-plugin.version}</version>
                 <executions>
+                    <!-- copy bundles -->
                     <execution>
                         <id>copy-dependencies-bundles</id>
                         <phase>prepare-package</phase>
@@ -197,7 +198,22 @@
                             <!-- Bundle dependencies must be in [provided] scope -->
                             <includeScope>provided</includeScope>
                             <excludeTransitive>true</excludeTransitive>
-                            <excludeArtifactIds>org.apache.felix.http.base</excludeArtifactIds>
+                            <!-- All bundles will be copied here -->
+                            <outputDirectory>${project.build.directory}/classes/bundles</outputDirectory>
+                        </configuration>
+                    </execution>
+                    <!-- copy libraries -->
+                    <execution>
+                        <id>copy-dependencies-lib</id>
+                        <phase>prepare-package</phase>
+                        <goals>
+                            <goal>copy-dependencies</goal>
+                        </goals>
+                        <configuration>
+                            <!-- Library dependencies must be in [runtime] scope -->
+                            <includeScope>runtime</includeScope>
+                            <!-- All libraries will be copied here -->
+                            <outputDirectory>${project.build.directory}/lib</outputDirectory>
                         </configuration>
                     </execution>
                 </executions>
@@ -205,8 +221,11 @@
                     <overWriteReleases>true</overWriteReleases>
                     <overWriteSnapshots>true</overWriteSnapshots>
                     <stripVersion>false</stripVersion>
-                    <!-- All bundles will be copied here -->
-                    <outputDirectory>${project.build.directory}/classes/bundles</outputDirectory>
+                    <excludeArtifactIds>
+                        org.apache.felix.http.base,
+                        org.osgi.annotation.versioning,
+                        animal-sniffer-annotations
+                    </excludeArtifactIds>
                 </configuration>
             </plugin>
 
