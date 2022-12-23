@@ -227,7 +227,6 @@
         <!-- Jakarta Dependencies Start -->
 
         <!-- JSR 374 [JSON-P] Specification API v2.0 -->
-
         <dependency>
             <groupId>jakarta.json</groupId>
             <artifactId>jakarta.json-api</artifactId>
@@ -284,36 +283,16 @@
         </dependency>
 
         <dependency>
+            <groupId>jakarta.mail</groupId>
+            <artifactId>jakarta.mail-api</artifactId>
+            <scope>provided</scope>
+        </dependency>
+
+        <dependency>
             <groupId>org.eclipse.angus</groupId>
-            <artifactId>jakarta.mail</artifactId>
+            <artifactId>angus-mail</artifactId>
             <version>${eclipse.angus-mail.version}</version>
             <scope>provided</scope>
-            <exclusions>
-                <exclusion>
-                    <groupId>org.eclipse.angus</groupId>
-                    <artifactId>angus-mail</artifactId>
-                </exclusion>
-                <exclusion>
-                    <groupId>org.eclipse.angus</groupId>
-                    <artifactId>logging-mailhandler</artifactId>
-                </exclusion>
-                <exclusion>
-                    <groupId>org.eclipse.angus</groupId>
-                    <artifactId>pop3</artifactId>
-                </exclusion>
-                <exclusion>
-                    <groupId>org.eclipse.angus</groupId>
-                    <artifactId>smtp</artifactId>
-                </exclusion>
-                <exclusion>
-                    <groupId>org.eclipse.angus</groupId>
-                    <artifactId>imap</artifactId>
-                </exclusion>
-                <exclusion>
-                    <groupId>org.eclipse.angus</groupId>
-                    <artifactId>angus-core</artifactId>
-                </exclusion>
-            </exclusions>
         </dependency>
 
         <dependency>
@@ -527,12 +506,6 @@
             <artifactId>apache-mime4j-storage</artifactId>
             <version>${mime4j.version}</version>
             <scope>provided</scope>
-            <exclusions>
-                <exclusion>
-                    <groupId>commons-io</groupId>
-                    <artifactId>commons-io</artifactId>
-                </exclusion>
-            </exclusions>
         </dependency>
 
         <dependency>
@@ -570,6 +543,7 @@
             <artifactId>uuid-creator</artifactId>
         </dependency>
 
+        <!-- Needed by Resteasy -->
         <dependency>
             <groupId>io.smallrye</groupId>
             <artifactId>jandex</artifactId>
