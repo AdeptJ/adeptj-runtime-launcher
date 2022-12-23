@@ -283,16 +283,10 @@
         </dependency>
 
         <dependency>
-            <groupId>jakarta.mail</groupId>
-            <artifactId>jakarta.mail-api</artifactId>
-            <scope>provided</scope>
-        </dependency>
-
-        <dependency>
             <groupId>org.eclipse.angus</groupId>
-            <artifactId>angus-mail</artifactId>
+            <artifactId>jakarta.mail</artifactId>
             <version>${eclipse.angus-mail.version}</version>
-            <scope>provided</scope>
+            <scope>compile</scope>
         </dependency>
 
         <dependency>
@@ -901,6 +895,12 @@
         <dependency>
             <groupId>com.adeptj</groupId>
             <artifactId>adeptj-modules-restclient-core</artifactId>
+            <scope>provided</scope>
+        </dependency>
+
+        <dependency>
+            <groupId>com.adeptj</groupId>
+            <artifactId>adeptj-modules-commons-email</artifactId>
             <scope>provided</scope>
         </dependency>
 
@@ -1569,28 +1569,6 @@
                     <groupId>com.github.scribejava</groupId>
                     <artifactId>scribejava-apis</artifactId>
                     <version>${scribejava.version}</version>
-                    <scope>provided</scope>
-                </dependency>
-
-            </dependencies>
-
-        </profile>
-
-        <profile>
-
-            <id>Email</id>
-
-            <dependencies>
-
-                <dependency>
-                    <groupId>org.apache.commons</groupId>
-                    <artifactId>commons-email</artifactId>
-                    <scope>provided</scope>
-                </dependency>
-
-                <dependency>
-                    <groupId>com.adeptj</groupId>
-                    <artifactId>adeptj-modules-commons-email</artifactId>
                     <scope>provided</scope>
                 </dependency>
 
