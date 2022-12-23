@@ -951,10 +951,6 @@
                     <version>${jboss-logging.version}</version>
                     <exclusions>
                         <exclusion>
-                            <groupId>org.slf4j</groupId>
-                            <artifactId>slf4j-api</artifactId>
-                        </exclusion>
-                        <exclusion>
                             <groupId>log4j</groupId>
                             <artifactId>log4j</artifactId>
                         </exclusion>
@@ -965,6 +961,10 @@
                         <exclusion>
                             <groupId>org.jboss.logmanager</groupId>
                             <artifactId>jboss-logmanager</artifactId>
+                        </exclusion>
+                        <exclusion>
+                            <groupId>org.slf4j</groupId>
+                            <artifactId>slf4j-api</artifactId>
                         </exclusion>
                     </exclusions>
                 </dependency>
