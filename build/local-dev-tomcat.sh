@@ -7,7 +7,6 @@ RESTORE=$(echo -en '\033[0m')
 MVN_PROFILES="no-shade,JDBC-CP-Hikari,JPA-EclipseLink,MyBatis,MySQL,MariaDB,PostgreSQL,MongoDB,Cayenne,OAuth2,\
 Jetty-HttpClient,\
 Tomcat-Server,\
-HibernateValidator-Dependencies,\
 Aries-SPIFLY"
 echo "${GREEN}"
 echo -e "######################################################################################"

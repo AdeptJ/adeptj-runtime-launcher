@@ -66,11 +66,6 @@
         <graphql-java-kickstart.version>15.0.0</graphql-java-kickstart.version>
         <graphql-java-servlet.version>15.0.0</graphql-java-servlet.version>
         <jakarta.websocket.version>2.1.0</jakarta.websocket.version>
-        <!-- JBoss Logging -->
-        <jboss-logging.version>3.5.0.Final</jboss-logging.version>
-        <jboss-logging-annotations.version>2.2.1.Final</jboss-logging-annotations.version>
-        <jboss-logging-processor.version>2.2.1.Final</jboss-logging-processor.version>
-        <jdeparser.version>2.0.3.Final</jdeparser.version>
 
         <!-- JAX-B Dependencies JDK 10+ -->
         <jaxb-runtime.version>4.0.1</jaxb-runtime.version>
@@ -609,6 +604,38 @@
             <scope>compile</scope>
         </dependency>
 
+        <!-- JBoss Logging dependencies Start -->
+        <!-- These are needed by Resteasy and Hibernate validator -->
+        <dependency>
+            <groupId>org.jboss.logging</groupId>
+            <artifactId>jboss-logging</artifactId>
+            <version>${jboss-logging.version}</version>
+            <scope>compile</scope>
+        </dependency>
+
+        <!-- Needed by jboss-logging-processor -->
+        <dependency>
+            <groupId>org.jboss.jdeparser</groupId>
+            <artifactId>jdeparser</artifactId>
+            <version>${jdeparser.version}</version>
+            <scope>compile</scope>
+        </dependency>
+
+        <dependency>
+            <groupId>org.jboss.logging</groupId>
+            <artifactId>jboss-logging-annotations</artifactId>
+            <version>${jboss-logging-annotations.version}</version>
+            <scope>compile</scope>
+        </dependency>
+
+        <dependency>
+            <groupId>org.jboss.logging</groupId>
+            <artifactId>jboss-logging-processor</artifactId>
+            <version>${jboss-logging-processor.version}</version>
+            <scope>compile</scope>
+        </dependency>
+        <!-- JBoss Logging dependencies End -->
+
         <!-- Misc Dependencies End -->
 
         <!-- OSGi/Apache Felix Dependencies Start -->
@@ -971,69 +998,6 @@
     <!-- Plan is to modularize the build process using Maven profiles. -->
 
     <profiles>
-
-        <!-- Needed by Hibernate Validator, this profile should be active for Tomcat and Jetty build scripts -->
-        <profile>
-
-            <id>HibernateValidator-Dependencies</id>
-
-            <dependencies>
-
-                <dependency>
-                    <groupId>org.jboss.logging</groupId>
-                    <artifactId>jboss-logging</artifactId>
-                    <version>${jboss-logging.version}</version>
-                    <exclusions>
-                        <exclusion>
-                            <groupId>log4j</groupId>
-                            <artifactId>log4j</artifactId>
-                        </exclusion>
-                        <exclusion>
-                            <groupId>org.apache.logging.log4j</groupId>
-                            <artifactId>log4j-api</artifactId>
-                        </exclusion>
-                        <exclusion>
-                            <groupId>org.jboss.logmanager</groupId>
-                            <artifactId>jboss-logmanager</artifactId>
-                        </exclusion>
-                        <exclusion>
-                            <groupId>org.slf4j</groupId>
-                            <artifactId>slf4j-api</artifactId>
-                        </exclusion>
-                    </exclusions>
-                </dependency>
-
-                <dependency>
-                    <groupId>org.jboss.jdeparser</groupId>
-                    <artifactId>jdeparser</artifactId>
-                    <version>${jdeparser.version}</version>
-                </dependency>
-
-                <dependency>
-                    <groupId>org.jboss.logging</groupId>
-                    <artifactId>jboss-logging-annotations</artifactId>
-                    <version>${jboss-logging-annotations.version}</version>
-                </dependency>
-
-                <dependency>
-                    <groupId>org.jboss.logging</groupId>
-                    <artifactId>jboss-logging-processor</artifactId>
-                    <version>${jboss-logging-processor.version}</version>
-                    <exclusions>
-                        <exclusion>
-                            <groupId>org.jboss.jdeparser</groupId>
-                            <artifactId>jdeparser</artifactId>
-                        </exclusion>
-                        <exclusion>
-                            <groupId>org.jboss.logging</groupId>
-                            <artifactId>jboss-logging-annotations</artifactId>
-                        </exclusion>
-                    </exclusions>
-                </dependency>
-
-            </dependencies>
-
-        </profile>
 
         <profile>
 
