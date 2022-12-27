@@ -605,33 +605,10 @@
         </dependency>
 
         <!-- JBoss Logging dependencies Start -->
-        <!-- These are needed by Resteasy and Hibernate validator -->
+        <!-- This is needed by Undertow, Resteasy and Hibernate validator -->
         <dependency>
             <groupId>org.jboss.logging</groupId>
             <artifactId>jboss-logging</artifactId>
-            <version>${jboss-logging.version}</version>
-            <scope>compile</scope>
-        </dependency>
-
-        <!-- Needed by jboss-logging-processor -->
-        <dependency>
-            <groupId>org.jboss.jdeparser</groupId>
-            <artifactId>jdeparser</artifactId>
-            <version>${jdeparser.version}</version>
-            <scope>compile</scope>
-        </dependency>
-
-        <dependency>
-            <groupId>org.jboss.logging</groupId>
-            <artifactId>jboss-logging-annotations</artifactId>
-            <version>${jboss-logging-annotations.version}</version>
-            <scope>compile</scope>
-        </dependency>
-
-        <dependency>
-            <groupId>org.jboss.logging</groupId>
-            <artifactId>jboss-logging-processor</artifactId>
-            <version>${jboss-logging-processor.version}</version>
             <scope>compile</scope>
         </dependency>
         <!-- JBoss Logging dependencies End -->
