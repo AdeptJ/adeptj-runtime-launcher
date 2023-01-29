@@ -47,7 +47,7 @@
         <yasson.version>3.0.2</yasson.version>
         <eclipse.parsson.version>1.1.1</eclipse.parsson.version>
         <eclipse.angus-activation.version>2.0.0</eclipse.angus-activation.version>
-        <eclipse.angus-mail.version>1.1.0</eclipse.angus-mail.version>
+        <eclipse.angus-mail.version>2.0.1</eclipse.angus-mail.version>
         <glassfish.expressly.version>5.0.0</glassfish.expressly.version>
         <jakarta.enterprise.lang-model.version>4.0.1</jakarta.enterprise.lang-model.version>
         <mime4j.version>0.8.9</mime4j.version>
