@@ -59,7 +59,7 @@
         <eclipselink.asm.version>9.4.0</eclipselink.asm.version>
         <!-- GraphQL -->
         <java-dataloader.version>3.2.0</java-dataloader.version>
-        <graphql-java.version>20.0</graphql-java.version>
+        <graphql-java.version>20.2</graphql-java.version>
         <graphql-java-kickstart.version>15.0.0</graphql-java-kickstart.version>
         <graphql-java-servlet.version>15.0.0</graphql-java-servlet.version>
         <jakarta.websocket.version>2.1.0</jakarta.websocket.version>
