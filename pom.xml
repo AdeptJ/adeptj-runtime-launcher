@@ -562,6 +562,12 @@
             <artifactId>uuid-creator</artifactId>
         </dependency>
 
+        <dependency>
+            <groupId>org.springframework.security</groupId>
+            <artifactId>spring-security-crypto</artifactId>
+            <scope>compile</scope>
+        </dependency>
+
         <!-- Needed by Resteasy -->
         <dependency>
             <groupId>io.smallrye</groupId>
