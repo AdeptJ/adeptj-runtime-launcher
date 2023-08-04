@@ -32,8 +32,8 @@ function findJavaVersion() {
 
 JAVA_VERSION=$(findJavaVersion)
 
-if [ "${JAVA_VERSION}" -lt 11 ]; then
-  echo "AdeptJ Runtime needs Java 11 or newer!"
+if [ "${JAVA_VERSION}" -lt 17 ]; then
+  echo "AdeptJ Runtime needs Java 17 or newer!"
   exit
 fi
 
