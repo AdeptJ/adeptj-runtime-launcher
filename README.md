@@ -1,11 +1,11 @@
 <p>
 
-  <a href="http://www.apache.org/licenses/LICENSE-2.0">
-   <img src="https://img.shields.io/badge/license-Apache%202-blue.svg">  
+  <a href="https://www.apache.org/licenses/LICENSE-2.0">
+   <img src="https://img.shields.io/badge/license-Apache%202-blue.svg" alt="Apache License URL">  
   </a>
 
   <a href="https://docs.osgi.org/specification/#release-8">
-   <img src="https://img.shields.io/badge/OSGi-R8-orange?style=flat">
+   <img src="https://img.shields.io/badge/OSGi-R8-orange?style=flat" alt="OSGi R8">
   </a>
 
   <a href="https://gitter.im/AdeptJ/adeptj-runtime?utm_source=badge&amp;utm_medium=badge&amp;utm_campaign=pr-badge&amp;utm_content=badge">
@@ -13,25 +13,25 @@
   </a>
 
   <a href="https://twitter.com/_AdeptJ">
-     <img src="https://img.shields.io/badge/twitter-AdeptJ-f08d1c.svg?style=social&style=flat"> 
+     <img src="https://img.shields.io/badge/twitter-AdeptJ-f08d1c.svg?style=social&style=flat" alt="_AdeptJ Twitter"> 
   </a>
 
 </p>
 
 **Launcher for AdeptJ Runtime**
 
-**Minimal runnable jar is ~30MB in size with below mentioned modules, starts in ~3000ms and low on resources**
+**Minimal runnable jar is ~30MB in size with below-mentioned modules, starts in ~3000ms and low on resources**
 
 **Steps to build and run:**
 
-1. Make sure you have JDK 11+ and Apache Maven 3.6.x+ installed.
+1. Make sure you have JDK 17(or newer) and Apache Maven 3.9.0(or newer) installed.
 2. Clone [adeptj-parent](https://github.com/AdeptJ/adeptj-parent) and run **mvn clean install** to have the current parent version in local .m2
 3. Since adeptj-runtime needs adeptj-modules therefore clone [adeptj-modules](https://github.com/AdeptJ/adeptj-modules) and build it locally by running **mvn clean install** in adeptj-modules base directory.
 4. clone [adeptj-runtime](https://github.com/AdeptJ/adeptj-runtime) and run **mvn clean install**.
 5. Now come to adeptj-runtime-launcher base directory and execute any of the maven profile script according to your requirements, e.g. ./build/minimal.sh
 6. Above step will create AdeptJ Runtime Launcher Uber jar with the /lib directory on the classpath.
 7. Now from adeptj-runtime-launcher directory itself execute this command ./bin/start.sh
-8. Start script will work on JDK 11 and so on.
+8. Start script will work on JDK 17 and so on.
 9. Go to [AdeptJ OSGi WebConsole](http://localhost:8080/system/console) to configure the services.
 10. System will ask for username/password, provide the default ones [admin/admin]
 11. For examples on how to consume the modules please look into [adeptj-modules-examples](https://github.com/AdeptJ/adeptj-modules-examples)
@@ -43,11 +43,9 @@ Start AdeptJ Runtime with jpda option to run it in debug mode(port 8000) i.e ./b
 Start Parameters and VM arguments, most of these provided in start script.
 
 1. For specifying port: -Dadeptj.rt.port=8080
-2. Enable HTTP2: -Denable.http2=true
-3. Enable Async Logging: -Dasync.logging=true
-4. Felix Logging Level: -Dfelix.log.level=3
-5. For providing server mode: -Dadeptj.rt.mode=PROD or DEV, PROD is default
-6. Command line argument for launching browser when server starts: launchBrowser=true
+2. Enable Async Logging: -Dasync.logging=true
+3. Felix Logging Level: -Dfelix.log.level=3
+4. For providing server mode: -Dadeptj.rt.mode=PROD or DEV, PROD is default
 
 **LICENSE**
 
