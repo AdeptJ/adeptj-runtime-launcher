@@ -1,4 +1,4 @@
-#!/usr/bin/env bash
+#!/bin/bash
 
 GREEN=$(echo -en '\033[00;32m')
 RESTORE=$(echo -en '\033[0m')

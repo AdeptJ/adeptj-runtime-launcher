@@ -1,4 +1,4 @@
-#!/usr/bin/env bash
+#!/bin/bash
 
 ###############################################################################
 #                                                                             #
@@ -18,29 +18,24 @@
 #                                                                             #
 ###############################################################################
 
-# This script is used to stop running instance of adeptj runtime.
-# This will find the process and kill it and execute stop command for adeptj.
+# This script is used to stop running instance of AdeptJ Runtime.
 
-# preparing base paths
 BIN_PATH=$(cd $(dirname "$0") && pwd)
-BASE=$(dirname "$BIN_PATH")
+BASE_DIR=$(dirname "$BIN_PATH")
 
-# target directory
-TARGET=$BASE"/target"
+TARGET_DIR=$BASE_DIR"/target"
 
-# Moving forward if target directory exist.
-if [[ -d "$TARGET" ]]
-then
-
-   PID_FILE=$TARGET"/adeptj.pid"
-
-   if [ -e "$PID_FILE" ]
-
-   then
-       PID=$(cat "$PID_FILE")
-       # killing running adeptj process
-       kill "$PID"
-       rm -f "$PID_FILE"
-   fi
+if [[ -d "$TARGET_DIR" ]]; then
+  PID_FILE=$TARGET_DIR"/adeptj.pid"
+else
+  PID_FILE=$BASE_DIR"/adeptj.pid"
 fi
-exit
+
+if [ -e "$PID_FILE" ]; then
+  kill $(cat "$PID_FILE")
+  rm -f "$PID_FILE"
+  echo "AdeptJ Runtime stopped!"
+else
+  echo -e '\033[31mCould not stop AdeptJ Runtime because adeptj.pid file not found, please stop it manually if it is still running.'
+fi
+exit 0
