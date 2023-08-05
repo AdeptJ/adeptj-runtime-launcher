@@ -886,12 +886,6 @@
 
         <dependency>
             <groupId>com.adeptj</groupId>
-            <artifactId>adeptj-modules-websecurity-oauth</artifactId>
-            <scope>provided</scope>
-        </dependency>
-
-        <dependency>
-            <groupId>com.adeptj</groupId>
             <artifactId>adeptj-modules-commons-validator</artifactId>
             <scope>provided</scope>
         </dependency>
@@ -1474,6 +1468,12 @@
                     <groupId>com.github.scribejava</groupId>
                     <artifactId>scribejava-apis</artifactId>
                     <version>${scribejava.version}</version>
+                    <scope>provided</scope>
+                </dependency>
+
+                <dependency>
+                    <groupId>com.adeptj</groupId>
+                    <artifactId>adeptj-modules-websecurity-oauth</artifactId>
                     <scope>provided</scope>
                 </dependency>
 
