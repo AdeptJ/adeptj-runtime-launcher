@@ -17,7 +17,7 @@ case "$1" in
     MVN_PROFILES="$CORE_PROFILES"'Apache-HttpClient,Undertow-Server'
     ;;
   *)
-    echo -e '\033[31mServer adapter is not specified, going ahead with Undertow!\033[0m'
+    echo -e '\033[31mServer adapter is not specified, going ahead with default option Undertow!\033[0m'
     echo 'Usage: ./local-dev.sh jetty or tomcat or undertow'
     MVN_PROFILES="$CORE_PROFILES"'Apache-HttpClient,Undertow-Server'
     ;;
