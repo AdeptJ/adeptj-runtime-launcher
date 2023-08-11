@@ -26,3 +26,6 @@ adeptj-runtime-launcher.iml
 target
 .DS_Store
 *.pid
+.classpath
+.project
+*.prefs
