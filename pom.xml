@@ -1171,6 +1171,12 @@
             <!-- Needed on Windows OS for generating and interpreting ANSI escape sequences -->
             <id>Jansi</id>
 
+            <activation>
+                <os>
+                    <family>windows</family>
+                </os>
+            </activation>
+
             <dependencies>
 
                 <dependency>
@@ -1199,14 +1205,6 @@
                         <exclusion>
                             <groupId>org.slf4j</groupId>
                             <artifactId>slf4j-api</artifactId>
-                        </exclusion>
-                        <exclusion>
-                            <groupId>org.javassist</groupId>
-                            <artifactId>javassist</artifactId>
-                        </exclusion>
-                        <exclusion>
-                            <groupId>io.micrometer</groupId>
-                            <artifactId>micrometer-core</artifactId>
                         </exclusion>
                     </exclusions>
                 </dependency>
