@@ -4,7 +4,7 @@ GREEN=$(echo -en '\033[00;32m')
 RESTORE=$(echo -en '\033[0m')
 
 # maven profiles to include support in runtime
-CORE_PROFILES='no-shade,JDBC-CP-Hikari,MyBatis,Undertow-Server,Aries-SPIFLY,Jetty-HttpClient,'
+CORE_PROFILES='Copy-Lib,JDBC-CP-Hikari,MyBatis,Undertow-Server,Aries-SPIFLY,OAuth2,Jetty-Client-Full,'
 
 case "$1" in
   'mariadb')

@@ -4,14 +4,14 @@ GREEN=$(echo -en '\033[00;32m')
 RESTORE=$(echo -en '\033[0m')
 
 # maven profiles to include support in runtime
-CORE_PROFILES='no-shade,JDBC-CP-Hikari,JPA-EclipseLink,MyBatis,MySQL,MariaDB,PostgreSQL,MongoDB,Cayenne,OAuth2,Aries-SPIFLY,'
+CORE_PROFILES='Copy-Lib,JDBC-CP-Hikari,JPA-EclipseLink,MyBatis,MySQL,MariaDB,PostgreSQL,MongoDB,Cayenne,OAuth2,Aries-SPIFLY,'
 
 case "$1" in
   'jetty')
-    MVN_PROFILES="$CORE_PROFILES"'Jetty-HttpClient-For-Jetty-Server-Adapter,Jetty-Server'
+    MVN_PROFILES="$CORE_PROFILES"'Jetty-Client-Min,Jetty-Server'
     ;;
   'tomcat')
-    MVN_PROFILES="$CORE_PROFILES"'Jetty-HttpClient,Tomcat-Server'
+    MVN_PROFILES="$CORE_PROFILES"'Jetty-Client-Full,Tomcat-Server'
     ;;
   'undertow')
     MVN_PROFILES="$CORE_PROFILES"'Apache-HttpClient,Undertow-Server'

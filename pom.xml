@@ -39,7 +39,6 @@
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <main.class>com.adeptj.runtime.core.Launcher</main.class>
         <!-- Common Dependencies -->
-        <maven-shade-plugin.version>3.5.0</maven-shade-plugin.version>
         <maven-dependency-plugin.version>3.6.0</maven-dependency-plugin.version>
         <maven-assembly-plugin.version>3.6.0</maven-assembly-plugin.version>
         <jansi.version>2.4.0</jansi.version>
@@ -976,6 +975,7 @@
 
             <dependencies>
 
+                <!-- Servlet api should be in compile scope so that it can be copied to /lib -->
                 <dependency>
                     <groupId>jakarta.servlet</groupId>
                     <artifactId>jakarta.servlet-api</artifactId>
@@ -998,6 +998,7 @@
 
             <dependencies>
 
+                <!-- Servlet api should be in compile scope so that it can be copied to /lib -->
                 <dependency>
                     <groupId>jakarta.servlet</groupId>
                     <artifactId>jakarta.servlet-api</artifactId>
@@ -1016,7 +1017,7 @@
 
         <profile>
 
-            <id>Jetty-HttpClient</id>
+            <id>Jetty-Client-Full</id>
 
             <dependencies>
 
@@ -1067,7 +1068,7 @@
 
         <profile>
 
-            <id>Jetty-HttpClient-For-Jetty-Server-Adapter</id>
+            <id>Jetty-Client-Min</id>
 
             <dependencies>
 
@@ -1584,48 +1585,7 @@
 
         <profile>
 
-            <id>shade</id>
-
-            <build>
-
-                <plugins>
-
-                    <plugin>
-                        <groupId>org.apache.maven.plugins</groupId>
-                        <artifactId>maven-shade-plugin</artifactId>
-                        <version>${maven-shade-plugin.version}</version>
-                        <executions>
-                            <execution>
-                                <phase>package</phase>
-                                <goals>
-                                    <goal>shade</goal>
-                                </goals>
-                                <configuration>
-                                    <transformers>
-                                        <transformer implementation="org.apache.maven.plugins.shade.resource.ManifestResourceTransformer">
-                                            <mainClass>${main.class}</mainClass>
-                                        </transformer>
-                                    </transformers>
-                                    <artifactSet>
-                                        <excludes>
-                                            <exclude>org.osgi:org.osgi.annotation.versioning</exclude>
-                                            <exclude>org.apache.felix:org.apache.felix.http.base</exclude>
-                                        </excludes>
-                                    </artifactSet>
-                                </configuration>
-                            </execution>
-                        </executions>
-                    </plugin>
-
-                </plugins>
-
-            </build>
-
-        </profile>
-
-        <profile>
-
-            <id>no-shade</id>
+            <id>Copy-Lib</id>
 
             <build>
 

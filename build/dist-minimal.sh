@@ -4,14 +4,14 @@ GREEN=$(echo -en '\033[00;32m')
 RESTORE=$(echo -en '\033[0m')
 
 # maven profiles to include support in runtime
-CORE_PROFILES='no-shade,Aries-SPIFLY,'
+CORE_PROFILES='Copy-Lib,OAuth2,Aries-SPIFLY,'
 
 case "$1" in
   'jetty')
-    MVN_PROFILES="$CORE_PROFILES"'Jetty-HttpClient-For-Jetty-Server-Adapter,Jetty-Server,assemble'
+    MVN_PROFILES="$CORE_PROFILES"'Jetty-Client-Min,Jetty-Server,assemble'
     ;;
   'tomcat')
-    MVN_PROFILES="$CORE_PROFILES"'Jetty-HttpClient,Tomcat-Server,assemble'
+    MVN_PROFILES="$CORE_PROFILES"'Jetty-Client-Full,Tomcat-Server,assemble'
     ;;
   'undertow')
     MVN_PROFILES="$CORE_PROFILES"'Apache-HttpClient,Undertow-Server,assemble'
@@ -19,7 +19,7 @@ case "$1" in
   *)
     echo -e '\033[31mServer adapter is not specified, going ahead with Jetty!\033[0m'
     echo 'Usage: ./dist-minimal.sh jetty or tomcat or undertow'
-    MVN_PROFILES="$CORE_PROFILES"'Jetty-HttpClient-For-Jetty-Server-Adapter,Jetty-Server,assemble'
+    MVN_PROFILES="$CORE_PROFILES"'Jetty-Client-Min,Jetty-Server,assemble'
     ;;
 esac
 
