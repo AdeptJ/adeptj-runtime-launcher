@@ -689,6 +689,11 @@
             </exclusions>
         </dependency>
 
+        <dependency>
+            <groupId>org.apache.felix</groupId>
+            <artifactId>org.apache.felix.http.wrappers</artifactId>
+        </dependency>
+
         <!-- Here for debugging purpose in eclipse, excluded from being bundled, shaded -->
         <dependency>
             <groupId>org.apache.felix</groupId>
