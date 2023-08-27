@@ -57,6 +57,7 @@
         <jandex.version>3.1.2</jandex.version>
         <eclipselink.asm.version>9.5.0</eclipselink.asm.version>
         <owasp.encoder.version>1.2.3</owasp.encoder.version>
+        <joor.version>0.9.15</joor.version>
         <!-- GraphQL -->
         <java-dataloader.version>3.2.0</java-dataloader.version>
         <graphql-java.version>21.0</graphql-java.version>
@@ -549,6 +550,13 @@
             <artifactId>encoder</artifactId>
             <version>${owasp.encoder.version}</version>
             <scope>provided</scope>
+        </dependency>
+
+        <dependency>
+            <groupId>org.jooq</groupId>
+            <artifactId>joor</artifactId>
+            <version>${joor.version}</version>
+            <scope>compile</scope>
         </dependency>
 
         <!-- Needed by Resteasy -->
