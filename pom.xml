@@ -1216,7 +1216,7 @@
 
         <profile>
 
-            <id>JDBC-CP-Hikari</id>
+            <id>HikariCP</id>
 
             <dependencies>
 
@@ -1273,11 +1273,11 @@
 
         <profile>
 
-            <id>JPA-EclipseLink</id>
+            <id>EclipseLink</id>
 
             <dependencies>
 
-                <!-- EclipseLink 4.0.0 (JPA 3) Dependencies -->
+                <!-- EclipseLink 4.0.2 (JPA 3.1) Dependencies -->
 
                 <dependency>
                     <groupId>jakarta.persistence</groupId>
