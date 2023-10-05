@@ -24,7 +24,7 @@
     <parent>
         <groupId>com.adeptj</groupId>
         <artifactId>adeptj-parent</artifactId>
-        <version>29</version>
+        <version>30</version>
         <relativePath/>
     </parent>
     <artifactId>adeptj-runtime-launcher</artifactId>
@@ -448,6 +448,13 @@
         <dependency>
             <groupId>io.jsonwebtoken</groupId>
             <artifactId>jjwt-impl</artifactId>
+            <version>${jjwt.version}</version>
+            <scope>provided</scope>
+        </dependency>
+
+        <dependency>
+            <groupId>io.jsonwebtoken</groupId>
+            <artifactId>jjwt-jackson</artifactId>
             <version>${jjwt.version}</version>
             <scope>provided</scope>
         </dependency>
