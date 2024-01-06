@@ -42,7 +42,7 @@
         <maven-dependency-plugin.version>3.6.1</maven-dependency-plugin.version>
         <maven-assembly-plugin.version>3.6.0</maven-assembly-plugin.version>
         <jansi.version>2.4.1</jansi.version>
-        <classmate.version>1.6.0</classmate.version>
+        <classmate.version>1.7.0</classmate.version>
         <yasson.version>3.0.3</yasson.version>
         <eclipse.parsson.version>1.1.5</eclipse.parsson.version>
         <eclipse.angus-activation.version>2.0.1</eclipse.angus-activation.version>
@@ -61,8 +61,8 @@
         <!-- GraphQL -->
         <java-dataloader.version>3.2.2</java-dataloader.version>
         <graphql-java.version>21.3</graphql-java.version>
-        <graphql-java-kickstart.version>15.0.0</graphql-java-kickstart.version>
-        <graphql-java-servlet.version>15.0.0</graphql-java-servlet.version>
+        <graphql-java-kickstart.version>15.1.0</graphql-java-kickstart.version>
+        <graphql-java-servlet.version>15.1.0</graphql-java-servlet.version>
         <jakarta.websocket.version>2.1.0</jakarta.websocket.version>
 
         <!-- JAX-B Dependencies JDK 10+ -->
