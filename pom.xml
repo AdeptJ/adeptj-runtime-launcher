@@ -66,9 +66,9 @@
         <jakarta.websocket.version>2.1.1</jakarta.websocket.version>
 
         <!-- JAX-B Dependencies JDK 10+ -->
-        <jaxb-runtime.version>4.0.4</jaxb-runtime.version>
+        <jaxb-runtime.version>4.0.5</jaxb-runtime.version>
         <istack-commons-runtime.version>4.2.0</istack-commons-runtime.version>
-        <txw2.version>4.0.4</txw2.version>
+        <txw2.version>4.0.5</txw2.version>
 
         <!-- AdeptJ Runtime Dependencies Start -->
         <adeptj-runtime.version>1.0.0</adeptj-runtime.version>
