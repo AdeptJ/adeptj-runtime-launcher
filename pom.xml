@@ -540,11 +540,12 @@
             <scope>compile</scope>
         </dependency>
 
+        <!-- v1.3.0 is not an OSGi bundle, so export it from framework packages -->
         <dependency>
             <groupId>org.owasp.encoder</groupId>
             <artifactId>encoder</artifactId>
             <version>${owasp.encoder.version}</version>
-            <scope>provided</scope>
+            <scope>compile</scope>
         </dependency>
 
         <dependency>
