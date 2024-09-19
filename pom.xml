@@ -60,10 +60,10 @@
         <joor.version>0.9.15</joor.version>
         <!-- GraphQL -->
         <java-dataloader.version>3.3.0</java-dataloader.version>
-        <graphql-java.version>22.2</graphql-java.version>
-        <graphql-java-kickstart.version>15.2.0</graphql-java-kickstart.version>
-        <graphql-java-servlet.version>15.2.0</graphql-java-servlet.version>
-        <jakarta.websocket.version>2.1.1</jakarta.websocket.version>
+        <graphql-java.version>22.3</graphql-java.version>
+        <graphql-java-kickstart.version>16.0.0</graphql-java-kickstart.version>
+        <graphql-java-servlet.version>16.0.0</graphql-java-servlet.version>
+        <jakarta.websocket.version>2.2.0</jakarta.websocket.version>
 
         <!-- JAX-B Dependencies JDK 10+ -->
         <jaxb-runtime.version>4.0.5</jaxb-runtime.version>
