@@ -4,7 +4,7 @@ GREEN=$(echo -en '\033[00;32m')
 RESTORE=$(echo -en '\033[0m')
 
 # maven profiles to include support in runtime
-CORE_PROFILES='Copy-Lib,HikariCP,EclipseLink,MyBatis,MySQL,MariaDB,PostgreSQL,MongoDB,Cayenne,OAuth2,Aries-SPIFLY,GraphQL,'
+CORE_PROFILES='Copy-Lib,HikariCP,EclipseLink,MyBatis,MySQL,MariaDB,PostgreSQL,MongoDB,Cayenne,OAuth2,Aries-SPIFLY,GraphQL,ProjectReactor,'
 
 case "$1" in
   'jetty')
