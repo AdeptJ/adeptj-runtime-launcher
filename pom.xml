@@ -1627,6 +1627,49 @@
 
         <profile>
 
+            <id>OSGi-Bundle-Provisioning-Reference-Protocol</id>
+
+            <build>
+
+                <plugins>
+
+                    <plugin>
+                        <groupId>org.apache.maven.plugins</groupId>
+                        <artifactId>maven-dependency-plugin</artifactId>
+                        <version>${maven-dependency-plugin.version}</version>
+                        <executions>
+                            <execution>
+                                <id>copy-dependencies-bundles</id>
+                                <phase>prepare-package</phase>
+                                <goals>
+                                    <goal>copy-dependencies</goal>
+                                </goals>
+                                <configuration>
+                                    <!-- Bundle dependencies must be in [provided] scope -->
+                                    <includeScope>provided</includeScope>
+                                    <excludeTransitive>true</excludeTransitive>
+                                    <excludeArtifactIds>org.apache.felix.http.base</excludeArtifactIds>
+                                </configuration>
+                            </execution>
+                        </executions>
+                        <configuration>
+                            <prefix>adeptj_</prefix>
+                            <overWriteReleases>true</overWriteReleases>
+                            <overWriteSnapshots>true</overWriteSnapshots>
+                            <stripVersion>true</stripVersion>
+                            <!-- All bundles will be copied here -->
+                            <outputDirectory>${project.build.directory}/bundles</outputDirectory>
+                        </configuration>
+                    </plugin>
+
+                </plugins>
+
+            </build>
+
+        </profile>
+
+        <profile>
+
             <id>assemble</id>
 
             <build>
