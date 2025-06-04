@@ -60,8 +60,8 @@
         <joor.version>0.9.15</joor.version>
         <reactor-core.version>3.7.4</reactor-core.version>
         <!-- GraphQL -->
-        <java-dataloader.version>3.4.0</java-dataloader.version>
-        <graphql-java.version>22.3</graphql-java.version>
+        <java-dataloader.version>5.0.0</java-dataloader.version>
+        <graphql-java.version>24.1</graphql-java.version>
         <graphql-java-kickstart.version>16.0.0</graphql-java-kickstart.version>
         <graphql-java-servlet.version>16.0.0</graphql-java-servlet.version>
         <jakarta.websocket.version>2.2.0</jakarta.websocket.version>
