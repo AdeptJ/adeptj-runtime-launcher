@@ -59,7 +59,7 @@
         <owasp.encoder.version>1.4.0</owasp.encoder.version>
         <joor.version>0.9.15</joor.version>
         <jspecify.version>1.0.0</jspecify.version>
-        <reactor-core.version>3.8.1</reactor-core.version>
+        <reactor-core.version>3.8.2</reactor-core.version>
         <!-- GraphQL -->
         <java-dataloader.version>5.0.0</java-dataloader.version>
         <graphql-java.version>24.1</graphql-java.version>
