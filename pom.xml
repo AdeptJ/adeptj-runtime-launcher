@@ -58,6 +58,7 @@
         <jandex.version>3.5.3</jandex.version>
         <owasp.encoder.version>1.4.0</owasp.encoder.version>
         <joor.version>0.9.15</joor.version>
+        <jspecify.version>1.0.0</jspecify.version>
         <reactor-core.version>3.8.1</reactor-core.version>
         <!-- GraphQL -->
         <java-dataloader.version>5.0.0</java-dataloader.version>
@@ -934,6 +935,13 @@
             <id>ProjectReactor</id>
 
             <dependencies>
+            
+                <dependency>
+                    <groupId>org.jspecify</groupId>
+                    <artifactId>jspecify</artifactId>
+                    <version>${jspecify.version}</version>
+                    <scope>provided</scope>
+                </dependency>
 
                 <dependency>
                     <groupId>io.projectreactor</groupId>
