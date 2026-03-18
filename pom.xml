@@ -39,7 +39,7 @@
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <main.class>com.adeptj.runtime.core.Launcher</main.class>
         <!-- Common Dependencies -->
-        <maven-dependency-plugin.version>3.9.0</maven-dependency-plugin.version>
+        <maven-dependency-plugin.version>3.10.0</maven-dependency-plugin.version>
         <maven-assembly-plugin.version>3.8.0</maven-assembly-plugin.version>
         <jansi.version>2.4.2</jansi.version>
         <classmate.version>1.7.3</classmate.version>
@@ -68,9 +68,9 @@
         <jakarta.websocket.version>2.2.0</jakarta.websocket.version>
 
         <!-- JAX-B Dependencies JDK 10+ -->
-        <jaxb-runtime.version>4.0.6</jaxb-runtime.version>
+        <jaxb-runtime.version>4.0.7</jaxb-runtime.version>
         <istack-commons-runtime.version>4.2.0</istack-commons-runtime.version>
-        <txw2.version>4.0.6</txw2.version>
+        <txw2.version>4.0.7</txw2.version>
 
         <!-- AdeptJ Runtime Dependencies Start -->
         <adeptj-runtime.version>1.0.0</adeptj-runtime.version>
