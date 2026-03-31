@@ -8,8 +8,8 @@
    <img src="https://img.shields.io/badge/OSGi-R8-orange?style=flat" alt="OSGi R8">
   </a>
 
-  <a href="https://gitter.im/AdeptJ/adeptj-runtime?utm_source=badge&amp;utm_medium=badge&amp;utm_campaign=pr-badge&amp;utm_content=badge">
-    <img src="https://camo.githubusercontent.com/64af58db769a4ad81ae61fac30422b835f495326/68747470733a2f2f6261646765732e6769747465722e696d2f41646570744a2f61646570746a2d72756e74696d652e737667" alt="Join the chat at https://gitter.im/AdeptJ/adeptj-runtime" data-canonical-src="https://badges.gitter.im/AdeptJ/adeptj-runtime.svg" style="max-width:100%;">
+  <a href="https://discord.gg/TM4VJ8EtFr">
+    <img src="https://img.shields.io/discord/938360266498904095?logo=discord" alt="Discord">
   </a>
 
   <a href="https://twitter.com/_AdeptJ">
@@ -24,7 +24,7 @@
 
 **Steps to build and run:**
 
-1. Make sure you have JDK 17(or newer) and Apache Maven 3.9.0(or newer) installed.
+1. Make sure you have JDK 21(or newer) and Apache Maven 3.9.0(or newer) installed.
 2. Clone [adeptj-parent](https://github.com/AdeptJ/adeptj-parent) and run **mvn clean install** to have the current parent version in local .m2
 3. Since adeptj-runtime needs adeptj-modules therefore clone [adeptj-modules](https://github.com/AdeptJ/adeptj-modules) and build it locally by running **mvn clean install** in adeptj-modules base directory.
 4. clone [adeptj-runtime](https://github.com/AdeptJ/adeptj-runtime) and run **mvn clean install**.
