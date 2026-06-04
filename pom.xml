@@ -62,7 +62,7 @@
         <reactor-core.version>3.8.4</reactor-core.version>
         <!-- GraphQL -->
         <java-dataloader.version>6.0.0</java-dataloader.version>
-        <graphql-java.version>25.0</graphql-java.version>
+        <graphql-java.version>26.0</graphql-java.version>
         <graphql-java-kickstart.version>16.0.0</graphql-java-kickstart.version>
         <graphql-java-servlet.version>16.0.0</graphql-java-servlet.version>
         <jakarta.websocket.version>2.2.0</jakarta.websocket.version>
