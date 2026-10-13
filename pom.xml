@@ -42,7 +42,7 @@
         <maven-dependency-plugin.version>3.11.0</maven-dependency-plugin.version>
         <maven-assembly-plugin.version>3.8.0</maven-assembly-plugin.version>
         <jansi.version>2.4.3</jansi.version>
-        <classmate.version>1.7.3</classmate.version>
+        <classmate.version>1.8.0</classmate.version>
         <eclipse.yasson.version>3.0.5</eclipse.yasson.version>
         <eclipse.parsson.version>1.1.9</eclipse.parsson.version>
         <eclipse.angus-activation.version>2.0.3</eclipse.angus-activation.version>
@@ -57,7 +57,7 @@
         <httpclient-osgi.version>4.5.14</httpclient-osgi.version>
         <jandex.version>3.6.0</jandex.version>
         <owasp.encoder.version>1.5.0</owasp.encoder.version>
-        <joor.version>0.9.15</joor.version>
+        <joor.version>0.9.16</joor.version>
         <jspecify.version>1.0.0</jspecify.version>
         <reactor-core.version>3.8.7</reactor-core.version>
         <!-- GraphQL -->
