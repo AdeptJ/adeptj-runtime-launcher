@@ -1,4 +1,4 @@
-FROM eclipse-temurin:21.0.4_7-jre
+FROM eclipse-temurin:21.0.10_7-jre
 
 COPY bin /usr/adeptj-runtime-launcher/bin
 COPY haproxy /usr/adeptj-runtime-launcher/haproxy
