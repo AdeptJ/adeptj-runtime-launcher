@@ -43,7 +43,7 @@
         <maven-assembly-plugin.version>3.8.0</maven-assembly-plugin.version>
         <jansi.version>2.4.3</jansi.version>
         <classmate.version>1.8.0</classmate.version>
-        <eclipse.yasson.version>3.0.5</eclipse.yasson.version>
+        <eclipse.yasson.version>3.0.6</eclipse.yasson.version>
         <eclipse.parsson.version>1.1.9</eclipse.parsson.version>
         <eclipse.angus-activation.version>2.0.3</eclipse.angus-activation.version>
         <eclipse.angus-mail.version>2.0.5</eclipse.angus-mail.version>
