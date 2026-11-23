@@ -60,6 +60,7 @@
         <joor.version>0.9.17</joor.version>
         <jspecify.version>1.0.0</jspecify.version>
         <reactor-core.version>3.8.7</reactor-core.version>
+        <hibernate-accessor.version>0.1.0</hibernate-accessor.version>
         <!-- GraphQL -->
         <java-dataloader.version>6.0.0</java-dataloader.version>
         <graphql-java.version>26.1</graphql-java.version>
@@ -478,6 +479,13 @@
             <groupId>com.fasterxml</groupId>
             <artifactId>classmate</artifactId>
             <version>${classmate.version}</version>
+            <scope>provided</scope>
+        </dependency>
+        
+        <dependency>
+            <groupId>org.hibernate.accessor</groupId>
+            <artifactId>hibernate-accessor</artifactId>
+            <version>${hibernate-accessor.version}</version>
             <scope>provided</scope>
         </dependency>
 
