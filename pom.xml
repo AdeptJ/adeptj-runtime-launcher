@@ -486,7 +486,7 @@
             <groupId>org.hibernate.accessor</groupId>
             <artifactId>hibernate-accessor</artifactId>
             <version>${hibernate-accessor.version}</version>
-            <scope>provided</scope>
+            <scope>compile</scope>
         </dependency>
 
         <dependency>
